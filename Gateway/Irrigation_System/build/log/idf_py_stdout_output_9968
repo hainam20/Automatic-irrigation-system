@@ -1,0 +1,90 @@
+[1/12] Generating ../../app.js.S
+[2/12] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/VScode/LORA/Final_Project/Irrigation_System/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[3/10] Building ASM object esp-idf/main/CMakeFiles/__idf_main.dir/__/__/app.js.S.obj
+[4/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/10] Linking C static library esp-idf\main\libmain.a
+[6/10] Generating ld/sections.ld
+[7/10] Linking CXX executable Irrigation_System.elf
+[8/10] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin
+[9/10] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/VScode/LORA/Final_Project/Irrigation_System/build/partition_table/partition-table.bin D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin"
+Irrigation_System.bin binary size 0x10e460 bytes. Smallest app partition is 0x200000 bytes. 0xf1ba0 bytes (47%) free.
+[9/10] cmd.exe /C "cd /D C:\esp\esp-idf\v5.2.2\esp-idf\components\esptool_py && C:\esp\tools\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf/v5.2.2/esp-idf -D SERIAL_TOOL=c:/esp/tools/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf/v5.2.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/VScode/LORA/Finaesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 Irrigation_System.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: b8:d6:1a:5b:7c:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0011efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 247.6 kbit/s)...
+Hash of data verified.
+Compressed 1107040 bytes to 646147...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001df20... (5 %)
+Writing at 0x0002bcfd... (7 %)
+Writing at 0x00039468... (10 %)
+Writing at 0x0004689c... (12 %)
+Writing at 0x0004df02... (15 %)
+Writing at 0x00053058... (17 %)
+Writing at 0x0005e267... (20 %)
+Writing at 0x000646f5... (22 %)
+Writing at 0x0006a1fe... (25 %)
+Writing at 0x0006fe0e... (27 %)
+Writing at 0x00075b7e... (30 %)
+Writing at 0x0007b5fe... (32 %)
+Writing at 0x000813af... (35 %)
+Writing at 0x00087003... (37 %)
+Writing at 0x0008cc87... (40 %)
+Writing at 0x00093472... (42 %)
+Writing at 0x0009923a... (45 %)
+Writing at 0x0009eef6... (47 %)
+Writing at 0x000a5572... (50 %)
+Writing at 0x000aafdc... (52 %)
+Writing at 0x000b0e7f... (55 %)
+Writing at 0x000b65fd... (57 %)
+Writing at 0x000bb818... (60 %)
+Writing at 0x000c0e62... (62 %)
+Writing at 0x000c60b2... (65 %)
+Writing at 0x000cb7d9... (67 %)
+Writing at 0x000d0e52... (70 %)
+Writing at 0x000d6790... (72 %)
+Writing at 0x000dc189... (75 %)
+Writing at 0x000e1c69... (77 %)
+Writing at 0x000e7a74... (80 %)
+Writing at 0x000ed212... (82 %)
+Writing at 0x000f2dd4... (85 %)
+Writing at 0x000fe744... (87 %)
+Writing at 0x0010478d... (90 %)
+Writing at 0x0010a6d0... (92 %)
+Writing at 0x00110221... (95 %)
+Writing at 0x0011683c... (97 %)
+Writing at 0x0011bb64... (100 %)
+Wrote 1107040 bytes (646147 compressed) at 0x00010000 in 15.4 seconds (effective 575.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 331.6 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+l_Project/Irrigation_System/build -P C:/esp/esp-idf/v5.2.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

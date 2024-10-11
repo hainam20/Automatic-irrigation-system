@@ -1,0 +1,173 @@
+ets Jul 29 2019 12:21:46
+
+rst:�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=46024h (286756) map[0m
+[0;32mI (203) esp_image: segment 1: paddr=0005604c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (209) esp_image: segment 2: paddr=00059d54 vaddr=40080000 size=062c4h ( 25284) load[0m
+[0;32mI (219) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a6c58h (683096) map[0m
+[0;32mI (453) esp_image: segment 4: paddr=00106c80 vaddr=400862c4 size=12404h ( 74756) load[0m
+[0;32mI (495) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (495) boot: Disabling RNG early entropy source...[0m
+[0;32mI (507) cpu_start: Multicore app[0m
+[0;32mI (515) cpu_start: Pro cpu start user code[0m
+[0;32mI (516) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (516) cpu_start: Application information:[0m
+[0;32mI (519) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (524) cpu_start: App version:      1[0m
+[0;32mI (529) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (535) cpu_start: ELF file SHA256:  3078c9d2f...[0m
+[0;32mI (540) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (546) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (550) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (555) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (560) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (567) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (573) heap_init: At 3FFB8430 len 00027BD0 (158 KiB): DRAM[0m
+[0;32mI (579) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (586) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (592) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (600) spi_flash: detected chip: generic[0m
+[0;32mI (603) spi_flash: flash io: dio[0m
+[0;32mI (608) main_task: Started on CPU0[0m
+[0;32mI (618) main_task: Calling app_main()[0m
+[0;32mI (688) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (688) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (718) wifi_init: rx ba win: 6[0m
+[0;32mI (718) wifi_init: tcpip mbox: 32[0m
+[0;32mI (718) wifi_init: udp mbox: 6[0m
+[0;32mI (718) wifi_init: tcp mbox: 6[0m
+[0;32mI (728) wifi_init: tcp tx win: 5760[0m
+[0;32mI (728) wifi_init: tcp rx win: 5760[0m
+[0;32mI (738) wifi_init: tcp mss: 1440[0m
+[0;32mI (738) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (748) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1008) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1098) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1098) wifi_app: WIFI_APP_MSG_USER_REQUESTED_STA_DISCONNECT[0m
+[0;32mI (1098) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1098) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1108) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1108) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: Hai Nam Password: 23581104
+[0;32mI (1128) wifi_app: Loaded station configuration[0m
+[0;32mI (1138) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1138) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1408) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (1438) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (4438) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4438) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4438) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (4438) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (5688) main_task: Returned from app_main()[0m
+[0;32mI (30508) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (30778) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (33898) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (33968) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (36738) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (37608) HTTP_SERVER: /wifiConnect.json requested[0m
+[0;32mI (37608) wifi_app: WIFI_APP_MSG_CONNECTING_FROM_HTTP_SERVER[0m
+[0;32mI (37618) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_INIT[0m
+[0;32mI (40228) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (41428) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (43168) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (43338) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (44128) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (44198) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (46558) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (47138) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (48138) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (55208) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (55278) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (56338) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (57218) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (59148) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (60008) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (62128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (62818) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (63358) HTTP_SERVER: index.html requested[0m
+[0;32mI (63408) HTTP_SERVER: Jquery requested[0m
+[0;32mI (63568) HTTP_SERVER: app.css requested[0m
+[0;32mI (63578) HTTP_SERVER: app.js requested[0m
+[0;32mI (66228) HTTP_SERVER: wifiDisconect.json requested[0m
+[0;32mI (66228) wifi_app: WIFI_APP_MSG_USER_REQUESTED_STA_DISCONNECT[0m
+[0;32mI (66228) wifi_app: WIFI_EVENT_STA_DISCONNECTED[0m
+WIFI_EVENT_STA_DISCONNECTED, reason code 8
+[0;32mI (66238) nvs: app_nvs_clear_sta_creds: Clearing Wifi station mode credentials from flash[0m
+app_nvs_clear_sta_creds: returned ESP_OK
+[0;32mI (66268) wifi_app: WIFI_APP_MSG_STA_DISCONNECTED[0m
+[0;32mI (66268) wifi_app: WIFI_APP_MSG_STA_DISCONNECTED: ATTEMPT FROM THE HTTP SERVER[0m
+[0;32mI (66278) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_FAIL[0m
+[0;32mI (68888) HTTP_SERVER: index.html requested[0m
+[0;32mI (68938) HTTP_SERVER: Jquery requested[0m
+[0;32mI (69098) HTTP_SERVER: app.css requested[0m
+[0;32mI (69178) HTTP_SERVER: app.js requested[0m
+[0;32mI (75078) HTTP_SERVER: /wifiConnect.json requested[0m
+[0;32mI (75078) wifi_app: WIFI_APP_MSG_CONNECTING_FROM_HTTP_SERVER[0m
+[0;32mI (75088) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_INIT[0m
+[0;32mI (75118) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (78128) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (78128) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (78128) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (78138) nvs: app_nvs_save_sta_creds: Saving station mode credentials to flash[0m
+[0;32mI (78148) nvs: app_nvs_save_sta_creds: wrote wifi_sta_config: Station SSID: Hai Nam Password: 23581104[0m
+app_nvs_save_sta_creds: returned ESP_OK
+[0;32mI (78158) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (78168) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (80688) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (115158) HTTP_SERVER: mqttConnect.json requested[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (115168) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_INIT[0m
+[0;32mI (115678) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (115678) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (115698) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (118128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (121148) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (124128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (127078) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (129158) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (132128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (135138) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (138138) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (195328) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (196358) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (199158) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (202128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (205128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (208138) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (210608) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (213168) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (216118) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (219138) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (222128) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (243328) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (243958) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (247148) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (249448) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m

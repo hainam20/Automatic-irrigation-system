@@ -1,0 +1,7 @@
+.home{
+    flex: 4;
+}
+
+.device:last-child {
+    margin-bottom: 0px !important;
+}

@@ -1,0 +1,22 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4008cbfa: xTaskPriorityDisinherit at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5107 (discriminator 1)
+0x40089d47: prvCopyDataToQueue at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4008a189: xQueueGenericSend at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x400d770e: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:51
+0x400d7ac7: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:375
+0x400d7216: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4dad: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4df5: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

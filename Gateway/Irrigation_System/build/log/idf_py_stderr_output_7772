@@ -1,0 +1,51 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4008cbfa: xTaskPriorityDisinherit at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5107 (discriminator 1)
+0x40089d47: prvCopyDataToQueue at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4008a189: xQueueGenericSend at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x400d77ea: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:83
+0x400d7be1: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:437
+0x400d72d7: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:88
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4008cbfa: xTaskPriorityDisinherit at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5107 (discriminator 1)
+0x40089d47: prvCopyDataToQueue at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4008a189: xQueueGenericSend at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x400d776a: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:51
+0x400d7844: lora_receive at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:145
+0x400d7238: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:36
+0x400d4db1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4df9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x4008cbfa: xTaskPriorityDisinherit at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:5107 (discriminator 1)
+0x40089d47: prvCopyDataToQueue at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:2469
+0x4008a189: xQueueGenericSend at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:964
+0x400d776a: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:51
+0x400d7824: lora_idle at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:127
+0x400d7b07: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:369
+0x400d7219: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:27
+0x400d4db1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4df9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

@@ -1,0 +1,39 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x40082a63: lock_acquire_generic at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:130
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x40092651: abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/abort.c:38
+0x40082a63: lock_acquire_generic at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:130
+0x40082ba1: _lock_acquire_recursive at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:158
+0x40082c1a: __retarget_lock_acquire_recursive at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:314
+0x401593f2: _vfprintf_r at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vfprintf.c:846 (discriminator 2)
+0x4015530d: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp-elf/src/newlib/newlib/libc/stdio/vprintf.c:34
+0x4016b695: esp_log_writev at C:/esp/esp-idf/v5.2.2/esp-idf/components/log/log.c:212
+0x40090fbd: esp_log_write at C:/esp/esp-idf/v5.2.2/esp-idf/components/log/log.c:222
+0x40106952: wifi_log at ??:?
+0x40122116: pm_set_next_tbtt at ??:?
+0x40096439: pm_tbtt_process at ??:?
+0x4016888e: pm_connectionless_wake_window_timeout_process at ??:?
+0x401688f5: pp_timer_do_process at ??:?
+0x40094286: ppTask at ??:?
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33mTo exit from IDF monitor please use "Ctrl+]". Alternatively, you can use Ctrl+T Ctrl+X to exit.[0m
+[0m
+Traceback (most recent call last):
+  File "c:\esp\esp-idf\v5.2.2\esp-idf\tools/idf_monitor.py", line 11, in <module>
+    sys.exit(subprocess.run([sys.executable, '-m', 'esp_idf_monitor'] + sys.argv[1:]).returncode)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "subprocess.py", line 550, in run
+  File "subprocess.py", line 1199, in communicate
+  File "subprocess.py", line 1262, in wait
+  File "subprocess.py", line 1543, in _wait
+KeyboardInterrupt

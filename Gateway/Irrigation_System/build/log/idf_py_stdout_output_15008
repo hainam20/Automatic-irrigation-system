@@ -1,0 +1,642 @@
+ets Jul 29 �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=267a4h (157604) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000367cc vaddr=3ffb0000 size=03cf0h ( 15600) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a4c4 vaddr=40080000 size=05b54h ( 23380) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cf60h (642912) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcf88 vaddr=40085b54 size=12b74h ( 76660) load[0m
+[0;32mI (437) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (437) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  3eb4f46f0...[0m
+[0;32mI (482) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (487) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83E8 len 00027C18 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (527) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+I (642) wifi:wifi driver task: 3ffc05d8, prio:23, stack:6656, core=0
+I (662) wifi:wifi firmware version: 3e0076f
+I (662) wifi:wifi certification version: v7.0
+I (662) wifi:config NVS flash: enabled
+I (662) wifi:config nano formating: disabled
+I (672) wifi:Init data frame dynamic rx buffer num: 32
+I (672) wifi:Init static rx mgmt buffer num: 5
+I (682) wifi:Init management short buffer num: 32
+I (682) wifi:Init dynamic tx buffer num: 32
+I (692) wifi:Init static rx buffer size: 1600
+I (692) wifi:Init static rx buffer num: 10
+I (692) wifi:Init dynamic rx buffer num: 32
+[0;32mI (702) wifi_init: rx ba win: 6[0m
+[0;32mI (702) wifi_init: tcpip mbox: 32[0m
+[0;32mI (702) wifi_init: udp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp mbox: 6[0m
+[0;32mI (712) wifi_init: tcp tx win: 5760[0m
+[0;32mI (722) wifi_init: tcp rx win: 5760[0m
+[0;32mI (722) wifi_init: tcp mss: 1440[0m
+[0;32mI (722) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (732) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (732) WiFi SoftAP: ESP_WIFI_MODE_AP[0m
+[0;32mI (752) WiFi SoftAP: wifi_init_softap finished. SSID:ESP32 password:23581104 channel:1[0m
+[0;32mI (752) WiFi Sta: ESP_WIFI_MODE_STA[0m
+[0;32mI (752) WiFi Sta: wifi_init_sta finished.[0m
+[0;32mI (762) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (852) wifi:mode : sta (b8:d6:1a:5b:7c:ac) + softAP (b8:d6:1a:5b:7c:ad)
+I (852) wifi:enable tsf
+I (862) wifi:Total power save buffer number: 16
+I (862) wifi:Init max length of beacon: 752/752
+I (862) wifi:Init max length of beacon: 752/752
+[0;32mI (862) WiFi Sta: Station started[0m
+[0;32mI (872) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.4.1[0m
+I (3712) wifi:ap channel adjust o:1,1 n:6,2
+I (3712) wifi:new:<6,0>, old:<1,1>, ap:<6,2>, sta:<6,0>, prof:1
+I (3712) wifi:state: init -> auth (b0)
+I (3722) wifi:state: auth -> assoc (0)
+I (3752) wifi:state: assoc -> run (10)
+I (3792) wifi:connected with Hai Nam, aid = 1, channel 6, BW20, bssid = 72:2b:d0:20:7d:60
+I (3792) wifi:security: WPA2-PSK, phy: bgn, rssi: -42
+I (3872) wifi:pm start, type: 1
+
+I (3872) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (3892) wifi:<ba-add>idx:0 (ifx:0, 72:2b:d0:20:7d:60), tid:0, ssn:0, winSize:64
+I (3992) wifi:dp: 2, bi: 102400, li: 4, scale listen interval from 307200 us to 409600 us
+I (3992) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (4872) WiFi Sta: Got IP:192.168.6.43[0m
+[0;32mI (4872) esp_netif_handlers: sta ip: 192.168.6.43, mask: 255.255.255.0, gw: 192.168.6.50[0m
+[0;32mI (4872) WiFi Sta: connected to ap SSID:Hai Nam password:23581104[0m
+[0;31mE (4882) WiFi Sta: NAPT not enabled on the netif: 0x3ffc62d4[0m
+[0;32mI (4882) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (6632) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (6642) MQTT_EXAMPLE: sent subscribe successful, msg_id=36440[0m
+[0;32mI (6642) MQTT_EXAMPLE: sent subscribe successful, msg_id=64108[0m
+[0;32mI (7072) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=36440[0m
+[0;32mI (7072) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (7482) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=64108[0m
+[0;32mI (7482) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (9892) main_task: Returned from app_main()[0m
+[0;32mI (69932) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (70542) LORA: 40 byte packet received:[{"ID":0,"temp":29,"hum":61,"adc_val":1}][0m
+[0;32mI (70582) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (70792) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":29,"hum":61,"adc_val":1}
+I (71442) wifi:<ba-add>idx:1 (ifx:0, 72:2b:d0:20:7d:60), tid:6, ssn:2, winSize:64
+[0;32mI (75972) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (76582) LORA: 40 byte packet received:[{"ID":1,"temp":33,"hum":69,"adc_val":2}][0m
+[0;32mI (76622) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (76832) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":33,"hum":69,"adc_val":2}
+[0;32mI (82012) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (82622) LORA: 40 byte packet received:[{"ID":2,"temp":33,"hum":66,"adc_val":3}][0m
+[0;32mI (82662) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (82892) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":33,"hum":66,"adc_val":3}
+[0;32mI (88012) Timer: 1 hour has passed![0m
+[0;32mI (129932) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (130972) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (134012) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (137052) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (140092) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (143132) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (151172) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (152212) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (155252) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (158292) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (161332) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (164372) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (172412) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (173452) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (176492) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (179532) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+I (180892) wifi:state: run -> init (7c0)
+I (180902) wifi:pm stop, total sleep time: 148083374 us / 177027329 us
+
+I (180902) wifi:<ba-del>idx:0, tid:0
+I (180902) wifi:<ba-del>idx:1, tid:6
+I (180902) wifi:new:<6,0>, old:<6,0>, ap:<6,2>, sta:<6,0>, prof:1
+[0;31mE (180912) transport_base: poll_read select error 113, errno = Software caused connection abort, fd = 54[0m
+[0;31mE (180922) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (180932) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (182572) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (185612) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (193612) Timer: 1 hour has passed![0m
+[0;32mI (193652) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (194692) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (195932) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (195932) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (195932) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (195932) mqtt_client: Error transport connect[0m
+[0;32mI (195942) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (195942) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (195952) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (195962) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (197732) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (200772) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (203812) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (206852) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (210962) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (210962) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (210962) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (210962) mqtt_client: Error transport connect[0m
+[0;32mI (210972) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (210972) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (210982) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (210992) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (214892) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (215932) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (218972) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (222012) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (225052) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (225992) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (225992) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (225992) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (225992) mqtt_client: Error transport connect[0m
+[0;32mI (226002) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (226002) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (226012) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (226022) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (228092) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (236132) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (237172) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (240212) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (241022) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (241022) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (241022) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (241022) mqtt_client: Error transport connect[0m
+[0;32mI (241032) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (241032) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (241042) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (241042) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (243252) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (246292) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (249332) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (256052) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (256052) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (256052) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (256052) mqtt_client: Error transport connect[0m
+[0;32mI (256062) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (256062) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (256072) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (256082) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (257332) Timer: 1 hour has passed![0m
+[0;32mI (257372) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (258412) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (261452) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (264492) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (267532) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (270572) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (271082) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (271082) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (271082) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (271082) mqtt_client: Error transport connect[0m
+[0;32mI (271092) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (271092) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (271102) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (271112) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (278612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (279652) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (282692) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (285732) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (286112) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (286112) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (286112) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (286112) mqtt_client: Error transport connect[0m
+[0;32mI (286122) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (286122) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (286132) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (286142) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (288772) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (291812) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (299852) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (300892) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (301142) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (301142) esp-tls: [sock=54] connect() error: Host is unreachable[0m
+[0;31mE (301142) transport_base: Failed to open a new connection: 32772[0m
+[0;31mE (301142) mqtt_client: Error transport connect[0m
+[0;32mI (301152) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (301152) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8004[0m
+[0;32mI (301162) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (301172) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (303932) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (306972) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (310012) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (313052) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (316172) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (321052) Timer: 1 hour has passed![0m
+[0;32mI (321092) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (322132) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (323172) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (323172) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (323172) mqtt_client: Error transport connect[0m
+[0;32mI (323182) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (323182) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (323192) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (323202) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (323202) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (325172) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (328212) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (331252) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (333212) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (334292) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (340212) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (340212) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (340212) mqtt_client: Error transport connect[0m
+[0;32mI (340222) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (340222) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (340232) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (340242) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (340242) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (342332) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (343372) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (346412) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (349452) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (350252) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (352492) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (355532) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (357252) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (357252) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (357252) mqtt_client: Error transport connect[0m
+[0;32mI (357262) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (357262) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (357272) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (357282) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (357282) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (363572) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (364612) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (367292) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (367652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (370692) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (373732) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (374292) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (374292) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (374292) mqtt_client: Error transport connect[0m
+[0;32mI (374302) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (374302) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (374312) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (374322) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (374322) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (376772) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (384332) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (384772) Timer: 1 hour has passed![0m
+[0;32mI (384812) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (385852) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (388892) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (391332) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (391332) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (391332) mqtt_client: Error transport connect[0m
+[0;32mI (391342) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (391342) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (391352) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (391362) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (391362) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (391932) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (394972) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (398012) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (401372) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (406052) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (407092) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (408372) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (408372) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (408372) mqtt_client: Error transport connect[0m
+[0;32mI (408382) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (408382) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (408392) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (408402) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (408402) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (410132) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (413172) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (416212) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (418412) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (419252) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (425412) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (425412) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (425412) mqtt_client: Error transport connect[0m
+[0;32mI (425422) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (425422) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (425432) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (425442) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (425442) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (427292) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (428332) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (431372) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (434412) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (435452) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (437452) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (440492) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (442452) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (442452) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (442452) mqtt_client: Error transport connect[0m
+[0;32mI (442462) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (442462) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (442472) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (442482) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (442482) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (448492) Timer: 1 hour has passed![0m
+[0;32mI (448532) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (449572) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (452492) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (452612) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (455652) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (458692) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (459492) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (459492) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (459492) mqtt_client: Error transport connect[0m
+[0;32mI (459502) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (459502) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (459512) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (459522) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (459522) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (461732) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (469532) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (469772) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (470812) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (473852) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (476532) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (476532) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (476532) mqtt_client: Error transport connect[0m
+[0;32mI (476542) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (476542) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (476552) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (476562) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (476562) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (476892) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (479932) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (482972) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (486572) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (491012) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (492052) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (493572) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (493572) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (493572) mqtt_client: Error transport connect[0m
+[0;32mI (493582) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (493582) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (493592) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (493602) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (493602) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (495092) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (498132) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (501172) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (503612) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (504212) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (510612) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (510612) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (510612) mqtt_client: Error transport connect[0m
+[0;32mI (510622) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (510622) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (510632) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (510642) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (510642) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (512212) Timer: 1 hour has passed![0m
+[0;32mI (512252) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (513292) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (516332) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (519372) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (520652) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (522412) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (525452) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (527652) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (527652) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (527652) mqtt_client: Error transport connect[0m
+[0;32mI (527662) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (527662) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (527672) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (527682) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (527682) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (533492) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (534532) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (537572) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (537692) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (540612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (543652) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (544692) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (544692) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (544692) mqtt_client: Error transport connect[0m
+[0;32mI (544702) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (544702) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (544712) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (544722) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (544722) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (546692) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (554732) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (554732) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (555772) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (558812) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (561732) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (561732) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (561732) mqtt_client: Error transport connect[0m
+[0;32mI (561742) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (561742) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (561752) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (561762) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (561762) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (561852) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (564892) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (567932) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (571772) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (575932) Timer: 1 hour has passed![0m
+[0;32mI (575972) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (577012) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (578772) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (578772) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (578772) mqtt_client: Error transport connect[0m
+[0;32mI (578782) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (578782) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (578792) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (578802) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (578802) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (580052) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (583092) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (586132) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (588812) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (589172) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (595812) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (595812) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (595812) mqtt_client: Error transport connect[0m
+[0;32mI (595822) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (595822) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (595832) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (595842) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (595842) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (597212) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (598252) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (601292) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (604332) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (605852) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (607372) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (610412) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (612852) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (612852) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (612852) mqtt_client: Error transport connect[0m
+[0;32mI (612862) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (612862) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (612872) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (612882) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (612882) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (618452) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (619492) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (622532) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (622892) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (625572) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (628612) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (629892) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (629892) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (629892) mqtt_client: Error transport connect[0m
+[0;32mI (629902) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (629902) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (629912) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (629922) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (629922) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (631652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (639652) Timer: 1 hour has passed![0m
+[0;32mI (639692) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (639932) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (640732) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (643772) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (646812) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (646932) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (646932) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (646932) mqtt_client: Error transport connect[0m
+[0;32mI (646942) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (646942) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (646952) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (646962) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (646962) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (649852) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (652892) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (656972) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (660932) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (661972) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (663972) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (663972) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (663972) mqtt_client: Error transport connect[0m
+[0;32mI (663982) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (663982) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (663992) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (664002) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (664002) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (665012) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (668052) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (671092) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (674012) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (674132) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (681012) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (681012) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (681012) mqtt_client: Error transport connect[0m
+[0;32mI (681022) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (681022) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (681032) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (681042) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (681042) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (682172) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (683212) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (686252) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (689292) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (691052) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (692332) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (695372) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (698052) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (698052) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (698052) mqtt_client: Error transport connect[0m
+[0;32mI (698062) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (698062) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (698072) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (698082) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (698082) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (703372) Timer: 1 hour has passed![0m
+[0;32mI (703412) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1162652) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;33mW (1163252) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1163252) LORA: 40 byte packet received:[{"ID":0,"temp":26,"hum":71,"adc_val":1}][0m
+[0;32mI (1163302) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1168172) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (1170692) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;31mE (1175172) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1175172) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1175172) mqtt_client: Error transport connect[0m
+[0;32mI (1175182) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (1175182) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (1175192) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (1175202) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (1175202) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1175212) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1175222) LORA: 40 byte packet received:[{"ID":1,"temp":28,"hum":71,"adc_val":3}][0m
+[0;32mI (1175282) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1175322) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1183362) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;33mW (1183962) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1183962) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":66,"adc_val":3}][0m
+[0;32mI (1184012) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1185222) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (1189362) Timer: 1 hour has passed![0m
+[0;32mI (1189402) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;31mE (1192222) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1192222) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1192222) mqtt_client: Error transport connect[0m
+[0;32mI (1192232) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (1192232) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (1192242) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (1192252) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (1192252) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1192262) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1192272) LORA: 40 byte packet received:[{"ID":0,"temp":26,"hum":71,"adc_val":1}][0m
+[0;32mI (1192332) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1192372) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1200412) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;33mW (1201012) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1201012) LORA: 40 byte packet received:[{"ID":0,"temp":26,"hum":71,"adc_val":1}][0m
+[0;32mI (1201062) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1202272) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (1206452) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (1209272) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (1209272) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (1209272) mqtt_client: Error transport connect[0m
+[0;32mI (1209282) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (1209282) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;31mE (1209292) MQTT_EXAMPLE: Last error captured as transport's socket errno: 0x76[0m
+[0;32mI (1209302) MQTT_EXAMPLE: Last errno string (Host is unreachable)[0m
+[0;32mI (1209302) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;33mW (1209312) mqtt_client: Publish: Losing qos0 data when client not connected[0m
+[0;32mI (1209322) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":66,"adc_val":3}][0m
+[0;32mI (1209362) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1209402) LORA_SEND_PACKET: Sending packet: GET_ID2[0m

@@ -1,0 +1,951 @@
+ets Jul 29 2ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (466) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (802) wifi station: wifi_init_sta finished.[0m
+I (812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (812) wifi:state: init -> auth (b0)
+I (832) wifi:state: auth -> assoc (0)
+I (832) wifi:state: assoc -> run (10)
+I (852) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (852) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (862) wifi:pm start, type: 1
+
+I (862) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (922) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3872) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (3872) wifi station: got ip:192.168.1.12[0m
+[0;32mI (3872) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (3882) MQTT_EXAMPLE: Other event id:7[0m
+I (4202) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (5542) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (5542) MQTT_EXAMPLE: sent subscribe successful, msg_id=25391[0m
+[0;32mI (5542) MQTT_EXAMPLE: sent subscribe successful, msg_id=30494[0m
+[0;32mI (5842) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=25391[0m
+[0;32mI (5852) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (6152) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=30494[0m
+[0;32mI (6152) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (8892) main_task: Returned from app_main()[0m
+[0;32mI (38932) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (39972) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (41012) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (42052) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (43092) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (44132) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (45172) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (46212) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (47252) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (48292) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (49332) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (50372) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (51412) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (52452) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (53492) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (54532) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (55572) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (56612) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (57612) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593fa:0x3ffc02f0 0x40155315:0x3ffc0610 0x4016b69d:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106956:0x3ffc06c0 0x4012211e:0x3ffc0730 0x40096439:0x3ffc0770 0x40168896:0x3ffc0790 0x401688fd:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 7a45f9baf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (812) wifi station: wifi_init_sta finished.[0m
+I (822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (1822) wifi:state: auth -> init (200)
+I (1822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (1822) wifi station: retry to connect to the AP[0m
+[0;32mI (1822) wifi station: connect to the AP fail[0m
+[0;32mI (4242) wifi station: retry to connect to the AP[0m
+[0;32mI (4242) wifi station: connect to the AP fail[0m
+I (4242) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4252) wifi:state: init -> auth (b0)
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (5252) wifi station: retry to connect to the AP[0m
+[0;32mI (5252) wifi station: connect to the AP fail[0m
+[0;32mI (7672) wifi station: retry to connect to the AP[0m
+[0;32mI (7672) wifi station: connect to the AP fail[0m
+I (7672) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7682) wifi:state: init -> auth (b0)
+I (7692) wifi:state: auth -> assoc (0)
+I (7702) wifi:state: assoc -> run (10)
+I (7722) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (7722) wifi:security: WPA2-PSK, phy: bgn, rssi: -43
+I (7732) wifi:pm start, type: 1
+
+I (7732) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7782) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10742) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10742) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10742) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10752) MQTT_EXAMPLE: Other event id:7[0m
+I (11062) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12392) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12402) MQTT_EXAMPLE: sent subscribe successful, msg_id=8059[0m
+[0;32mI (12402) MQTT_EXAMPLE: sent subscribe successful, msg_id=6656[0m
+[0;32mI (12642) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=8059[0m
+[0;32mI (12652) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (12902) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=6656[0m
+[0;32mI (12902) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15762) main_task: Returned from app_main()[0m
+[0;32mI (45802) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (46842) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (47882) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (48922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (49962) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (51002) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (52042) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53082) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (54122) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (55162) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (56202) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (57242) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (58282) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (59322) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (60362) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (61402) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (62442) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (63482) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (64482) Timer: 1 hour has passed![0m
+[0;32mI (66042) LORA: 40 byte packet received:[{"ID":2,"temp":31,"hum":85,"adc_val":3}][0m
+[0;32mI (66102) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (66352) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":31,"hum":85,"adc_val":3}
+[0;32mI (75802) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (76842) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (77882) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (78922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (79962) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (81002) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82042) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (83082) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (84122) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (85162) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (86202) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (87242) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (88282) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (89322) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (90362) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (91402) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (92442) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (93482) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (94482) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593fa:0x3ffc02f0 0x40155315:0x3ffc0610 0x4016b69d:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106956:0x3ffc06c0 0x4012211e:0x3ffc0730 0x40096439:0x3ffc0770 0x40168896:0x3ffc0790 0x401688fd:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 7a45f9baf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (802) wifi station: wifi_init_sta finished.[0m
+I (812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (1822) wifi:state: auth -> init (200)
+I (1822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (1822) wifi station: retry to connect to the AP[0m
+[0;32mI (1822) wifi station: connect to the AP fail[0m
+[0;32mI (4242) wifi station: retry to connect to the AP[0m
+[0;32mI (4242) wifi station: connect to the AP fail[0m
+I (4252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4252) wifi:state: init -> auth (b0)
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (5252) wifi station: retry to connect to the AP[0m
+[0;32mI (5252) wifi station: connect to the AP fail[0m
+[0;32mI (7672) wifi station: retry to connect to the AP[0m
+[0;32mI (7672) wifi station: connect to the AP fail[0m
+I (7682) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7682) wifi:state: init -> auth (b0)
+I (7702) wifi:state: auth -> assoc (0)
+I (7712) wifi:state: assoc -> run (10)
+I (7722) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (7722) wifi:security: WPA2-PSK, phy: bgn, rssi: -44
+I (7732) wifi:pm start, type: 1
+
+I (7732) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7762) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10742) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10742) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10742) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10752) MQTT_EXAMPLE: Other event id:7[0m
+I (11052) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12382) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12382) MQTT_EXAMPLE: sent subscribe successful, msg_id=62375[0m
+[0;32mI (12382) MQTT_EXAMPLE: sent subscribe successful, msg_id=24179[0m
+[0;32mI (12612) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=62375[0m
+[0;32mI (12612) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (12892) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=24179[0m
+[0;32mI (12892) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15762) main_task: Returned from app_main()[0m
+[0;32mI (45802) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (46842) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (47882) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (48922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (49962) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (51002) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (52042) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53082) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (54122) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (55162) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (56202) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (57242) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (58282) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (59322) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (60362) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (61402) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (62442) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (63482) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (64482) Timer: 1 hour has passed![0m
+[0;32mI (66042) LORA: 40 byte packet received:[{"ID":2,"temp":31,"hum":84,"adc_val":3}][0m
+[0;32mI (66102) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (66342) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":31,"hum":84,"adc_val":3}
+[0;32mI (75802) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (76842) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (77882) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (78922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (79962) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (81002) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82042) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (83082) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (84122) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (85162) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (86202) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (87242) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (88282) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (89322) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (90362) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (91402) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (92442) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (93482) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (94482) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593fa:0x3ffc02f0 0x40155315:0x3ffc0610 0x4016b69d:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106956:0x3ffc06c0 0x4012211e:0x3ffc0730 0x40096439:0x3ffc0770 0x40168896:0x3ffc0790 0x401688fd:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 7a45f9baf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (802) wifi station: wifi_init_sta finished.[0m
+I (812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (1822) wifi:state: auth -> init (200)
+I (1822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (1822) wifi station: retry to connect to the AP[0m
+[0;32mI (1822) wifi station: connect to the AP fail[0m
+[0;32mI (4242) wifi station: retry to connect to the AP[0m
+[0;32mI (4242) wifi station: connect to the AP fail[0m
+I (4242) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4242) wifi:state: init -> auth (b0)
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (5252) wifi station: retry to connect to the AP[0m
+[0;32mI (5252) wifi station: connect to the AP fail[0m
+[0;32mI (7672) wifi station: retry to connect to the AP[0m
+[0;32mI (7672) wifi station: connect to the AP fail[0m
+I (7672) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7672) wifi:state: init -> auth (b0)
+I (7692) wifi:state: auth -> assoc (0)
+I (7702) wifi:state: assoc -> run (10)
+I (7712) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (7712) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (7722) wifi:pm start, type: 1
+
+I (7722) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7752) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10732) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10732) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10732) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10742) MQTT_EXAMPLE: Other event id:7[0m
+I (11442) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12782) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12782) MQTT_EXAMPLE: sent subscribe successful, msg_id=56689[0m
+[0;32mI (12782) MQTT_EXAMPLE: sent subscribe successful, msg_id=25839[0m
+[0;32mI (13082) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=56689[0m
+[0;32mI (13082) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (13382) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=25839[0m
+[0;32mI (13392) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15752) main_task: Returned from app_main()[0m
+[0;32mI (45792) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (46832) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (47872) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (48912) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (49952) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (50992) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (52032) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53072) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (54112) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (55152) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (56192) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (57232) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (58272) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (59312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (60352) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (61392) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (62432) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (63472) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (64472) Timer: 1 hour has passed![0m
+[0;32mI (75792) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (76832) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (77872) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (78912) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (79952) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (80992) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82032) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (83072) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (84112) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (85152) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (86192) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (87232) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (88272) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (89312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (90352) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (91392) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (92432) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (93472) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (94472) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593fa:0x3ffc02f0 0x40155315:0x3ffc0610 0x4016b69d:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106956:0x3ffc06c0 0x4012211e:0x3ffc0730 0x40096439:0x3ffc0770 0x40168896:0x3ffc0790 0x401688fd:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 7a45f9baf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (802) wifi station: wifi_init_sta finished.[0m
+I (812) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (1822) wifi:state: auth -> init (200)
+I (1822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (1822) wifi station: retry to connect to the AP[0m
+[0;32mI (1822) wifi station: connect to the AP fail[0m
+[0;32mI (4242) wifi station: retry to connect to the AP[0m
+[0;32mI (4242) wifi station: connect to the AP fail[0m
+I (4262) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4262) wifi:state: init -> auth (b0)
+I (5272) wifi:state: auth -> init (200)
+I (5272) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (5272) wifi station: retry to connect to the AP[0m
+[0;32mI (5272) wifi station: connect to the AP fail[0m
+[0;32mI (7692) wifi station: retry to connect to the AP[0m
+[0;32mI (7692) wifi station: connect to the AP fail[0m
+I (7742) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7752) wifi:state: init -> auth (b0)
+I (7762) wifi:state: auth -> assoc (0)
+I (7772) wifi:state: assoc -> run (10)
+I (7782) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (7782) wifi:security: WPA2-PSK, phy: bgn, rssi: -36
+I (7792) wifi:pm start, type: 1
+
+I (7792) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7842) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10802) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10802) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10802) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10812) MQTT_EXAMPLE: Other event id:7[0m
+I (11122) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12462) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12462) MQTT_EXAMPLE: sent subscribe successful, msg_id=54480[0m
+[0;32mI (12472) MQTT_EXAMPLE: sent subscribe successful, msg_id=9412[0m
+[0;32mI (12772) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=54480[0m
+[0;32mI (12772) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (13072) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=9412[0m
+[0;32mI (13082) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15822) main_task: Returned from app_main()[0m
+[0;32mI (45862) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (46902) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (47942) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (48982) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (50022) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (51062) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (52102) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53142) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (54182) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (55222) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (56262) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (57302) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (58342) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (59382) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (60422) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (61462) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (62502) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (63542) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (64542) Timer: 1 hour has passed![0m
+[0;32mI (75862) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (76902) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (77942) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (78982) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (80022) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (81062) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82102) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (83142) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (84182) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (85222) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (86262) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (87302) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (88342) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (89382) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (90422) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (91462) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (92502) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (93542) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (94542) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593fa:0x3ffc02f0 0x40155315:0x3ffc0610 0x4016b69d:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106956:0x3ffc06c0 0x4012211e:0x3ffc0730 0x40096439:0x3ffc0770 0x40168896:0x3ffc0790 0x401688fd:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 7a45f9baf
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265cch (157132) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365f4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2dc vaddr=40080000 size=05d3ch ( 23868) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9cd08h (642312) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd30 vaddr=40085d3c size=1298ch ( 76172) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  7a45f9baf...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D8 len 00027C28 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (612) wifi station: STARTING WIFI APPLICATION[0m
+I (622) wifi:wifi driver task: 3ffc0890, prio:23, stack:6656, core=0
+I (642) wifi:wifi firmware version: 3e0076f
+I (642) wifi:wifi certification version: v7.0
+I (642) wifi:config NVS flash: enabled
+I (642) wifi:config nano formating: disabled
+I (642) wifi:Init data frame dynamic rx buffer num: 32
+I (652) wifi:Init static rx mgmt buffer num: 5
+I (652) wifi:Init management short buffer num: 32
+I (652) wifi:Init dynamic tx buffer num: 32
+I (662) wifi:Init static rx buffer size: 1600
+I (662) wifi:Init static rx buffer num: 10
+I (672) wifi:Init dynamic rx buffer num: 32
+[0;32mI (672) wifi_init: rx ba win: 6[0m
+[0;32mI (672) wifi_init: tcpip mbox: 32[0m
+[0;32mI (682) wifi_init: udp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp mbox: 6[0m
+[0;32mI (682) wifi_init: tcp tx win: 5760[0m
+[0;32mI (692) wifi_init: tcp rx win: 5760[0m
+[0;32mI (692) wifi_init: tcp mss: 1440[0m
+[0;32mI (702) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (702) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (712) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (802) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (802) wifi:enable tsf
+[0;32mI (802) wifi station: wifi_init_sta finished.[0m
+I (822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (822) wifi:state: init -> auth (b0)
+I (1822) wifi:state: auth -> init (200)
+I (1822) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (1822) wifi station: retry to connect to the AP[0m
+[0;32mI (1822) wifi station: connect to the AP fail[0m
+[0;32mI (4242) wifi station: retry to connect to the AP[0m
+[0;32mI (4242) wifi station: connect to the AP fail[0m
+I (4242) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (4252) wifi:state: init -> auth (b0)
+I (5252) wifi:state: auth -> init (200)
+I (5252) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+[0;32mI (5252) wifi station: retry to connect to the AP[0m
+[0;32mI (5252) wifi station: connect to the AP fail[0m
+[0;32mI (7672) wifi station: retry to connect to the AP[0m
+[0;32mI (7672) wifi station: connect to the AP fail[0m
+I (7682) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (7682) wifi:state: init -> auth (b0)
+I (7692) wifi:state: auth -> assoc (0)
+I (7702) wifi:state: assoc -> run (10)
+I (7722) wifi:connected with Hai Nam, aid = 3, channel 1, BW20, bssid = 22:87:ec:29:e8:b0
+I (7722) wifi:security: WPA2-PSK, phy: bgn, rssi: -39
+I (7732) wifi:pm start, type: 1
+
+I (7732) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7772) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10732) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10732) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10732) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10742) MQTT_EXAMPLE: Other event id:7[0m
+I (11052) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12382) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12392) MQTT_EXAMPLE: sent subscribe successful, msg_id=39771[0m
+[0;32mI (12392) MQTT_EXAMPLE: sent subscribe successful, msg_id=19290[0m
+[0;32mI (12632) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=39771[0m
+[0;32mI (12632) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (12902) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=19290[0m
+[0;32mI (12902) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15752) main_task: Returned from app_main()[0m

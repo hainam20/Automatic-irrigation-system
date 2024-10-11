@@ -1,0 +1,158 @@
+ets Jul �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4aa04h (305668) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=0005aa2c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005e734 vaddr=40080000 size=018e4h (  6372) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a7274h (684660) map[0m
+[0;32mI (458) esp_image: segment 4: paddr=0010729c vaddr=400818e4 size=16de4h ( 93668) load[0m
+[0;32mI (507) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (507) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) cpu_start: Multicore app[0m
+[0;32mI (528) cpu_start: Pro cpu start user code[0m
+[0;32mI (528) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) cpu_start: Application information:[0m
+[0;32mI (531) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (537) cpu_start: App version:      1[0m
+[0;32mI (541) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (547) cpu_start: ELF file SHA256:  1463b15db...[0m
+[0;32mI (553) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (558) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (563) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (567) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (572) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (585) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (612) spi_flash: detected chip: generic[0m
+[0;32mI (615) spi_flash: flash io: dio[0m
+[0;32mI (620) main_task: Started on CPU0[0m
+[0;32mI (630) main_task: Calling app_main()[0m
+[0;32mI (690) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (690) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (720) wifi_init: rx ba win: 6[0m
+[0;32mI (720) wifi_init: tcpip mbox: 32[0m
+[0;32mI (720) wifi_init: udp mbox: 6[0m
+[0;32mI (720) wifi_init: tcp mbox: 6[0m
+[0;32mI (730) wifi_init: tcp tx win: 5760[0m
+[0;32mI (730) wifi_init: tcp rx win: 5760[0m
+[0;32mI (740) wifi_init: tcp mss: 1440[0m
+[0;32mI (740) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (750) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1010) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1100) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1100) wifi_app: WIFI_APP_MSG_USER_REQUESTED_STA_DISCONNECT[0m
+[0;32mI (1100) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1110) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1110) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1120) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: (ESP_ERR_NVS_NOT_FOUND) no station SSID found in NVS
+[0;32mI (1140) wifi_app: Unable to load station configuration[0m
+[0;32mI (1140) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1150) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1160) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (5690) main_task: Returned from app_main()[0m
+[0;32mI (22010) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (22230) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (27890) HTTP_SERVER: index.html requested[0m
+[0;32mI (27930) HTTP_SERVER: app.css requested[0m
+[0;32mI (27960) HTTP_SERVER: Jquery requested[0m
+[0;32mI (28230) HTTP_SERVER: app.js requested[0m
+[0;32mI (28300) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (65230) HTTP_SERVER: /wifiConnect.json requested[0m
+[0;32mI (65230) wifi_app: WIFI_APP_MSG_CONNECTING_FROM_HTTP_SERVER[0m
+[0;32mI (65240) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_INIT[0m
+[0;32mI (65760) Timer: 1 hour has passed![0m
+[0;32mI (66200) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (68750) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (69200) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (69200) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (69200) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (69210) nvs: app_nvs_save_sta_creds: Saving station mode credentials to flash[0m
+[0;32mI (69220) nvs: app_nvs_save_sta_creds: wrote wifi_sta_config: Station SSID: Hai Nam Password: 23581104[0m
+app_nvs_save_sta_creds: returned ESP_OK
+[0;32mI (69220) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (71660) HTTP_SERVER: /wifiConnectStatus requested[0m
+[0;32mI (72980) HTTP_SERVER: mqttConnect.json requested[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (72990) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (72990) nvs: app_nvs_save_sta_creds: Saving station mode credentials to flash[0m
+[0;32mI (73000) nvs: app_nvs_save_sta_creds: wrote wifi_sta_config: Station SSID: Hai Nam Password: 23581104[0m
+app_nvs_save_sta_creds: returned ESP_OK
+[0;32mI (73010) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_INIT[0m
+[0;32mI (73020) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (74480) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (74490) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (74490) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (76530) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (78740) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (81390) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (82390) HTTP_SERVER: quantity.json requested[0m
+[0;32mI (82410) HTTP_SERVER: index.html requested[0m
+[0;32mI (82460) HTTP_SERVER: Jquery requested[0m
+[0;32mI (82670) HTTP_SERVER: app.css requested[0m
+[0;32mI (82690) HTTP_SERVER: app.js requested[0m
+[0;32mI (82730) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (87770) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (125730) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (126340) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (126380) LORA_SEND_PACKET: Sending packet: 200[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (130770) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (131380) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":65}][0m
+[0;32mI (131420) LORA_SEND_PACKET: Sending packet: 200[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":65}
+[0;32mI (141490) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (141500) LORA: 40 byte packet received:[GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG][0m
+TOPIC=/flespi/qos0
+DATA=GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
+[0;32mI (143740) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (146490) Timer: 1 hour has passed![0m
+[0;32mI (185690) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (190690) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (195690) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (200690) Timer: 1 hour has passed![0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (228870) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (230610) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (245690) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (250690) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (255690) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (260690) Timer: 1 hour has passed![0m
+[0;32mI (305690) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (310690) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (315690) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (320690) Timer: 1 hour has passed![0m

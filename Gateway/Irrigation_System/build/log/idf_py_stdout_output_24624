@@ -1,0 +1,39 @@
+[1/13] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/VScode/LORA/Final_Project/Irrigation_System/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lora.c.obj
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c: In function 'send_lora_packet':
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:499:24: warning: passing argument 1 of 'lora_send_packet' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  499 |       lora_send_packet(data, len);
+      |                        ^~~~
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:375:32: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t *' {aka 'const unsigned char *'}
+  375 | void lora_send_packet(uint8_t *buf, int size)
+      |                       ~~~~~~~~~^~~
+In file included from D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:11:
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.h: At top level:
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.h:66:23: warning: 'lora_data' defined but not used [-Wunused-variable]
+   66 | static const uint8_t *lora_data;
+      |                       ^~~~~~~~~
+[3/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_nvs.c.obj
+[4/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+In file included from D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:13:
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.h:66:23: warning: 'lora_data' defined but not used [-Wunused-variable]
+   66 | static const uint8_t *lora_data;
+      |                       ^~~~~~~~~
+[5/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/http_server_app.c.obj
+[6/11] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp_mqtt.c.obj
+D:/VScode/LORA/Final_Project/Irrigation_System/main/esp_mqtt.c: In function 'mqtt_event_handler':
+D:/VScode/LORA/Final_Project/Irrigation_System/main/esp_mqtt.c:97:17: warning: unused variable 'send_len' [-Wunused-variable]
+   97 |             int send_len = sprintf((char *)buf, event->data);
+      |                 ^~~~~~~~
+[7/11] Linking C static library esp-idf\main\libmain.a
+[8/11] Generating ld/sections.ld
+[9/11] Linking CXX executable Irrigation_System.elf
+[10/11] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin
+[11/11] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/VScode/LORA/Final_Project/Irrigation_System/build/partition_table/partition-table.bin D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin"
+Irrigation_System.bin binary size 0x109770 bytes. Smallest app partition is 0x200000 bytes. 0xf6890 bytes (48%) free.

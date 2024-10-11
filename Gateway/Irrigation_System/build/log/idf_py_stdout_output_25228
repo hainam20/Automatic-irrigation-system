@@ -1,0 +1,209 @@
+ets Ju�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4aa04h (305668) map[0m
+[0;32mI (209) esp_image: segment 1: paddr=0005aa2c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005e734 vaddr=40080000 size=018e4h (  6372) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a7270h (684656) map[0m
+[0;32mI (458) esp_image: segment 4: paddr=00107298 vaddr=400818e4 size=16de4h ( 93668) load[0m
+[0;32mI (507) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (507) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) cpu_start: Multicore app[0m
+[0;32mI (528) cpu_start: Pro cpu start user code[0m
+[0;32mI (528) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) cpu_start: Application information:[0m
+[0;32mI (531) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (537) cpu_start: App version:      1[0m
+[0;32mI (541) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (547) cpu_start: ELF file SHA256:  66718eed6...[0m
+[0;32mI (553) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (558) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (563) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (567) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (572) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (585) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (612) spi_flash: detected chip: generic[0m
+[0;32mI (615) spi_flash: flash io: dio[0m
+[0;32mI (620) main_task: Started on CPU0[0m
+[0;32mI (630) main_task: Calling app_main()[0m
+[0;32mI (700) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (700) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (730) wifi_init: rx ba win: 6[0m
+[0;32mI (730) wifi_init: tcpip mbox: 32[0m
+[0;32mI (730) wifi_init: udp mbox: 6[0m
+[0;32mI (730) wifi_init: tcp mbox: 6[0m
+[0;32mI (740) wifi_init: tcp tx win: 5760[0m
+[0;32mI (740) wifi_init: tcp rx win: 5760[0m
+[0;32mI (750) wifi_init: tcp mss: 1440[0m
+[0;32mI (750) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (760) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1020) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1110) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1110) wifi_app: WIFI_APP_MSG_USER_REQUESTED_STA_DISCONNECT[0m
+[0;32mI (1110) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1110) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1120) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1120) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: Hai Nam Password: 23581104
+[0;32mI (1140) wifi_app: Loaded station configuration[0m
+[0;32mI (1150) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1150) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1420) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (1450) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (4450) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4450) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (4450) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (4450) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (5700) main_task: Returned from app_main()[0m
+[0;32mI (65700) Timer: 1 hour has passed![0m
+[0;32mI (125700) Timer: 1 hour has passed![0m
+[0;32mI (143640) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (143850) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (155230) HTTP_SERVER: index.html requested[0m
+[0;32mI (155450) HTTP_SERVER: Jquery requested[0m
+[0;32mI (155650) HTTP_SERVER: app.css requested[0m
+[0;32mI (155700) HTTP_SERVER: app.js requested[0m
+[0;32mI (155730) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (185700) Timer: 1 hour has passed![0m
+[0;32mI (203920) HTTP_SERVER: mqttConnect.json requested[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (203930) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_INIT[0m
+[0;32mI (207040) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (207040) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (207070) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (207040) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (209540) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (210310) HTTP_SERVER: quantity.json requested[0m
+[0;32mI (210340) HTTP_SERVER: index.html requested[0m
+[0;32mI (210380) HTTP_SERVER: Jquery requested[0m
+[0;32mI (210610) HTTP_SERVER: app.css requested[0m
+[0;32mI (210640) HTTP_SERVER: app.js requested[0m
+[0;32mI (210670) HTTP_SERVER: favicon.ico requested[0m
+[0;31mE (210990) transport_base: poll_read select error 104, errno = Connection reset by peer, fd = 58[0m
+[0;31mE (210990) mqtt_client: Poll read error: 119, aborting connection[0m
+[0;32mI (226650) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (226650) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (226650) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;31mE (228560) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (228560) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (228570) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (245740) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (247890) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (248970) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (248970) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (249950) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (250520) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (250530) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (250780) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (251510) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (252100) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (253090) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (253680) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (253690) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (253880) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (253880) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (253880) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (254670) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (255490) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (255500) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (255820) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (256470) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (257060) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (257070) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (257370) HTTP_SERVER: mqttConnect.json requested[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (257380) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_INIT[0m
+[0;32mI (258030) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (258040) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (258620) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (258640) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;31mE (259250) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (259250) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (259260) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (259270) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_FAIL[0m
+[0;32mI (259610) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (260010) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (260020) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (260020) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (260190) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (260200) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (260250) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (260820) Timer: 1 hour has passed![0m
+[0;32mI (263020) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (266030) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (269020) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (271990) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (274030) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;31mE (276010) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (276010) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (276020) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (276260) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (276270) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (276260) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (277020) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (280020) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (282630) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (288740) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;31mE (293000) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (293000) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (293010) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;31mE (302490) mqtt_client: esp_mqtt_connect: mqtt_message_receive() returned 0[0m
+[0;31mE (302490) mqtt_client: MQTT connect failed[0m
+[0;32mI (305740) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (308840) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (308840) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (308840) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (310780) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (315820) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;31mE (319510) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (319510) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (319520) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m
+[0;32mI (319620) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (319630) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (319620) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (320820) Timer: 1 hour has passed![0m
+[0;32mI (333040) LORA: 252 byte packet received:[Yቍ��1��(�K�,Vlu���<Q�x�"�DX�_FV�=�G���76�,#=Z�M���@I�.�>tF��6��&��+�'��
+R\][0m
+[0;32mI (333080) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (336660) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (336670) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (336670) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+TOPIC=/flespi/qos0
+DATA=Yቍ��1��(�K�,Vlu���<Q�x�"�DX�_FV�=�G���76�,#=Z�M���@I�.�>tF��6��&��+�'��
+R\
+[0;31mE (337980) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read(): EOF[0m
+[0;31mE (337980) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;31mE (337990) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -2[0m

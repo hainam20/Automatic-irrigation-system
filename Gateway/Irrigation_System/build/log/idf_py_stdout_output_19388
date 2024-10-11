@@ -1,0 +1,279 @@
+ets Ju�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4af34h (306996) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005af5c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005ec64 vaddr=40080000 size=013b4h (  5044) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a747ch (685180) map[0m
+[0;32mI (459) esp_image: segment 4: paddr=001074a4 vaddr=400813b4 size=17314h ( 94996) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (538) cpu_start: App version:      1[0m
+[0;32mI (542) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  df3d12f28...[0m
+[0;32mI (554) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (559) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (564) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (569) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+[0;32mI (701) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (701) nvs: Quantity = 3[0m
+Quantity: 3
+[0;32mI (701) main_task: Returned from app_main()[0m
+[0;32mI (751) wifi_init: rx ba win: 6[0m
+[0;32mI (751) wifi_init: tcpip mbox: 32[0m
+[0;32mI (751) wifi_init: udp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp tx win: 5760[0m
+[0;32mI (761) wifi_init: tcp rx win: 5760[0m
+[0;32mI (761) wifi_init: tcp mss: 1440[0m
+[0;32mI (761) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (771) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1301) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1451) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1451) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1451) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1451) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1471) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: VNPT-HAINAM Password: 01686237737
+[0;32mI (1481) wifi_app: Loaded station configuration[0m
+[0;32mI (1491) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1491) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1501) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (3161) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (4171) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4171) esp_netif_handlers: sta ip: 192.168.1.10, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6511) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (6511) MQTT: MQTT_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (6511) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+[0;32mI (6531) MQTT: Loaded MQTT configuration[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (6541) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (6541) MQTT: Other event id:7[0m
+[0;32mI (6541) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (8391) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8391) MQTT: sent subscribe successful, msg_id=7471[0m
+[0;32mI (8391) MQTT: sent subscribe successful, msg_id=30617[0m
+[0;32mI (8671) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=7471[0m
+[0;32mI (8671) MQTT: sent publish successful[0m
+[0;32mI (8671) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (8681) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (8691) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (8691) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (8951) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=30617[0m
+[0;32mI (8951) MQTT: sent publish successful[0m
+[0;32mI (8951) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (8961) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (8961) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (8971) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (11511) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (11511) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (30761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (31141) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (31271) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (31801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (32131) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (32631) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (32641) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (33611) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (33861) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (34631) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (34731) HTTP_SERVER: index.html requested[0m
+[0;32mI (34791) HTTP_SERVER: Jquery requested[0m
+[0;32mI (34841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (34861) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (35141) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (35151) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (36131) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (36401) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (36411) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (37381) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (37881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (40091) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (40771) HTTP_SERVER: app.css requested[0m
+[0;32mI (40921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (41081) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (41581) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (41591) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (41881) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (42011) HTTP_SERVER: app.js requested[0m
+[0;32mI (42141) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (42581) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (42911) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (42921) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (43071) HTTP_SERVER: mqttDisconect.json requested[0m
+[0;32mI (43071) MQTT: MQTT_APP_MSG_USER_REQUESTED_DISCONNECT[0m
+[0;32mI (43291) MQTT_APP: app_nvs_clear_mqtt_creds: Clearing MQTT credentials from flash[0m
+app_nvs_clear_mqtt_creds: returned ESP_OK
+[0;32mI (43881) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (43961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (44161) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (44171) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (45161) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (45441) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (45441) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (45641) HTTP_SERVER: index.html requested[0m
+[0;32mI (45681) HTTP_SERVER: Jquery requested[0m
+[0;32mI (45921) HTTP_SERVER: app.css requested[0m
+[0;32mI (45951) HTTP_SERVER: app.js requested[0m
+[0;32mI (45981) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (46121) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (46441) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (49171) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (49191) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (50161) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (50671) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (50681) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (51651) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (51931) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (51931) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (52001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (52921) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (53041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53221) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (53221) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (54221) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (54501) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (54501) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (55491) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (56081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (58231) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (58241) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (59121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (59221) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (59711) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (59721) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (60701) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (60961) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (60961) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (61961) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (62161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (62231) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (63221) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (63491) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (63501) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (64471) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (65201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (67191) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (67201) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (68181) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (68661) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (68671) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (69651) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (69911) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (69921) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (70901) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (71181) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (71191) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (72161) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (72441) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (72441) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (73241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (73421) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (74281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (76121) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (76141) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (77111) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (77321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (77711) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (77711) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (78531) HTTP_SERVER: mqttConnect.json requested[0m
+[0;32mI (78541) MQTT: MQTT_APP_MSG_CONNECTING_FROM_HTTP_SERVER[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (78551) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (78551) MQTT: Other event id:7[0m
+[0;32mI (78551) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (78551) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_INIT[0m
+[0;32mI (78571) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (78591) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (78701) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (79101) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (79101) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (79241) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (79241) MQTT: sent subscribe successful, msg_id=19318[0m
+[0;32mI (79251) MQTT: sent subscribe successful, msg_id=41596[0m
+[0;32mI (79551) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=19318[0m
+[0;32mI (79551) MQTT: sent publish successful[0m
+[0;32mI (79551) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (79551) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (79571) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (79571) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (79831) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=41596[0m
+[0;32mI (79831) MQTT: sent publish successful[0m
+[0;32mI (79831) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (79831) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (79841) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (79851) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (80081) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (80361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (80461) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (80461) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (81311) HTTP_SERVER: mqttConnectStatus.json requested[0m
+[0;32mI (81451) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (81821) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (81831) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (82831) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (83401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (85531) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (85541) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (86441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (86531) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (87051) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (87061) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (88031) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (88291) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (88291) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (89281) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (89541) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (89551) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (90531) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (90811) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (90831) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (91791) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (92961) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (92971) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (93441) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m

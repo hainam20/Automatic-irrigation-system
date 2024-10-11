@@ -1,0 +1,124 @@
+ets Jul 29 2�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0bf2ch ( 48940) map[0m
+[0;32mI (122) esp_image: segment 1: paddr=0001bf54 vaddr=3ffb0000 size=023d0h (  9168) load[0m
+[0;32mI (125) esp_image: segment 2: paddr=0001e32c vaddr=40080000 size=01cech (  7404) load[0m
+[0;32mI (130) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1ec98h (126104) map[0m
+[0;32mI (179) esp_image: segment 4: paddr=0003ecc0 vaddr=40081cec size=0d430h ( 54320) load[0m
+[0;32mI (208) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (208) boot: Disabling RNG early entropy source...[0m
+[0;32mI (219) cpu_start: Multicore app[0m
+[0;32mI (228) cpu_start: Pro cpu start user code[0m
+[0;32mI (228) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (228) cpu_start: Application information:[0m
+[0;32mI (231) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (237) cpu_start: App version:      1[0m
+[0;32mI (242) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (248) cpu_start: ELF file SHA256:  0648f4b38...[0m
+[0;32mI (253) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (258) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (263) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (268) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (273) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (280) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (286) heap_init: At 3FFB2D10 len 0002D2F0 (180 KiB): DRAM[0m
+[0;32mI (292) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (299) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (305) heap_init: At 4008F11C len 00010EE4 (67 KiB): IRAM[0m
+[0;32mI (313) spi_flash: detected chip: generic[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;32mI (321) main_task: Started on CPU0[0m
+[0;32mI (331) main_task: Calling app_main()[0m
+[0;32mI (5401) main_task: Returned from app_main()[0m
+[0;32mI (65441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (66481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (69521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (72561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (75601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (78641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (86681) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (87721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (90761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (93801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (96841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (99881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (107921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (108961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (112001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (115041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (118081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (121121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+Number of packets: 1
+[0;32mI (129121) Timer: 1 hour has passed![0m
+[0;32mI (129161) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (129761) LORA: 38 byte packet received:[{"ID":0,"temp":0,"hum":0,"adc_val":3}][0m
+[0;32mI (129811) LORA_SEND_PACKET: Sending packet: 200[0m
+Number packets received: 1
+[0;32mI (135201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (136241) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (139281) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (142321) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (145361) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (148401) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (156441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (157481) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (160521) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (163561) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (166601) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (169641) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+Number of packets: 2
+[0;32mI (177641) Timer: 1 hour has passed![0m
+[0;32mI (185441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (186041) LORA: 40 byte packet received:[{"ID":0,"temp":30,"hum":83,"adc_val":3}][0m
+[0;32mI (186081) LORA_SEND_PACKET: Sending packet: 200[0m
+Number packets received: 2
+[0;32mI (191481) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (192521) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (195561) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (198601) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (201641) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (204681) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (212721) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (213761) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (216801) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (219841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (222881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (225921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+Number of packets: 3
+[0;32mI (233921) Timer: 1 hour has passed![0m
+[0;32mI (245441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (246481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (249521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (252561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (255601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (258641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (266681) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (267721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (270761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (273801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (276841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (279881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m

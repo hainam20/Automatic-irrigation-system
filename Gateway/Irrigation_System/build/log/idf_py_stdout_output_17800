@@ -1,0 +1,73 @@
+[1/5] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/VScode/LORA/Final_Project/Irrigation_System/build/partition_table/partition-table.bin D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin"
+Irrigation_System.bin binary size 0xdf690 bytes. Smallest app partition is 0x100000 bytes. 0x20970 bytes (13%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/VScode/LORA/Final_Project/Irrigation_System/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/3] cmd.exe /C "cd /D C:\esp\esp-idf\v5.2.2\esp-idf\components\esptool_py && C:\esp\tools\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf/v5.2.2/esp-idf -D SERIAL_TOOL=c:/esp/tools/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf/v5.2.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/VScode/LORA/Final_Project/Irrigation_System/build -P C:/esp/esp-idf/v5.2.2/esp-idesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 2MB 0x1000 bootloader/bootloader.bin 0x10000 Irrigation_System.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b8:d6:1a:5b:7c:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x000effff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16342...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16342 compressed) at 0x00001000 in 0.9 seconds (effective 249.0 kbit/s)...
+Hash of data verified.
+Compressed 915088 bytes to 576244...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001e05c... (5 %)
+Writing at 0x0002748c... (8 %)
+Writing at 0x0002c2f2... (11 %)
+Writing at 0x00034594... (13 %)
+Writing at 0x0003d6ae... (16 %)
+Writing at 0x00043381... (19 %)
+Writing at 0x00048d4b... (22 %)
+Writing at 0x0004e951... (25 %)
+Writing at 0x0005471f... (27 %)
+Writing at 0x0005a2b8... (30 %)
+Writing at 0x0006005c... (33 %)
+Writing at 0x0006683a... (36 %)
+Writing at 0x0006c3a0... (38 %)
+Writing at 0x000720e5... (41 %)
+Writing at 0x000777e1... (44 %)
+Writing at 0x0007ca50... (47 %)
+Writing at 0x00082077... (50 %)
+Writing at 0x00087252... (52 %)
+Writing at 0x0008c9ca... (55 %)
+Writing at 0x00092085... (58 %)
+Writing at 0x00097c3b... (61 %)
+Writing at 0x0009d846... (63 %)
+Writing at 0x000a32db... (66 %)
+Writing at 0x000a8ebf... (69 %)
+Writing at 0x000aeba4... (72 %)
+Writing at 0x000b43b6... (75 %)
+Writing at 0x000ba0c3... (77 %)
+Writing at 0x000bfb6e... (80 %)
+Writing at 0x000c55f0... (83 %)
+Writing at 0x000cf5be... (86 %)
+Writing at 0x000d7452... (88 %)
+Writing at 0x000dd19f... (91 %)
+Writing at 0x000e2d35... (94 %)
+Writing at 0x000e8fd8... (97 %)
+Writing at 0x000ee422... (100 %)
+Wrote 915088 bytes (576244 compressed) at 0x00010000 in 13.4 seconds (effective 545.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 306.2 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+f/components/esptool_py/run_serial_tool.cmake"

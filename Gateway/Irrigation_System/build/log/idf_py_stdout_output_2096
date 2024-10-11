@@ -1,0 +1,2477 @@
+ets Jul �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4af74h (307060) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005af9c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005eca4 vaddr=40080000 size=01374h (  4980) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a7594h (685460) map[0m
+[0;32mI (459) esp_image: segment 4: paddr=001075bc vaddr=40081374 size=17354h ( 95060) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (538) cpu_start: App version:      1[0m
+[0;32mI (542) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  b918d7403...[0m
+[0;32mI (554) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (559) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (564) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (569) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (617) spi_flash: flash io: dio[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+[0;32mI (701) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (701) nvs: Quantity = 3[0m
+Quantity: 3
+[0;32mI (701) main_task: Returned from app_main()[0m
+[0;32mI (751) wifi_init: rx ba win: 6[0m
+[0;32mI (751) wifi_init: tcpip mbox: 32[0m
+[0;32mI (751) wifi_init: udp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp mbox: 6[0m
+[0;32mI (761) wifi_init: tcp tx win: 5760[0m
+[0;32mI (761) wifi_init: tcp rx win: 5760[0m
+[0;32mI (761) wifi_init: tcp mss: 1440[0m
+[0;32mI (771) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (771) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1301) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1461) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1461) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1461) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1461) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1471) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: Hai Nam Password: 23581104
+[0;32mI (1481) wifi_app: Loaded station configuration[0m
+[0;32mI (1491) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1501) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1511) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (3171) wifi_app: WIFI_EVENT_STA_DISCONNECTED[0m
+WIFI_EVENT_STA_DISCONNECTED, reason code 2
+[0;32mI (6021) wifi_app: WIFI_EVENT_STA_DISCONNECTED[0m
+WIFI_EVENT_STA_DISCONNECTED, reason code 205
+[0;32mI (6091) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (6511) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (6511) MQTT: MQTT_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (6511) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+[0;32mI (6531) MQTT: Loaded MQTT configuration[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (6541) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (6541) MQTT: Other event id:7[0m
+[0;32mI (6541) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;31mE (6551) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (6561) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (6571) mqtt_client: Error transport connect[0m
+[0;32mI (6581) MQTT: MQTT_EVENT_ERROR[0m
+[0;31mE (6581) MQTT: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (6591) MQTT: Last errno string (Success)[0m
+[0;32mI (6591) MQTT: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (6591) MQTT: MQTT_APP_MSG_DISCONNECTED[0m
+[0;32mI (6601) MQTT: MQTT_APP_MSG_DISCONNECTED: ATTEMPT FAILED, CHECK WIFI ACCESS POINT AVAILABILITY[0m
+[0;32mI (9091) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (9091) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (11511) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (11511) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (21591) MQTT: Other event id:7[0m
+[0;32mI (24311) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (24311) MQTT: sent subscribe successful, msg_id=62425[0m
+[0;32mI (24321) MQTT: sent subscribe successful, msg_id=53474[0m
+[0;32mI (24621) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=62425[0m
+[0;32mI (24621) MQTT: sent publish successful[0m
+[0;32mI (24621) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (24621) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (24631) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (24631) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (24911) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=53474[0m
+[0;32mI (24911) MQTT: sent publish successful[0m
+[0;32mI (24911) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (24911) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (24921) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (24921) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (60761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (61801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (64841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (67881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (70921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (73961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (82611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (82651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (82901) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (83831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (83891) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (84131) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (84171) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (84521) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (84731) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (84781) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (84811) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (84871) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (85111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (86021) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (86071) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (88041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (88341) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (88381) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (88641) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (89541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (89601) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (91951) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (91991) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (92251) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (93161) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (93221) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (94041) Timer: 1 hour has passed![0m
+[0;32mI (95561) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (95601) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (95861) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (96761) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (96821) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (99171) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":40}][0m
+[0;32mI (99211) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (99471) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":40}
+[0;32mI (101241) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (101301) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (102221) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (102271) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (102531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (102871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (102921) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (103171) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (103211) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (103551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (103851) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (103911) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (104151) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (104191) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (104551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (104761) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":37}][0m
+[0;32mI (104801) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (105061) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":37}
+[0;32mI (108371) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":38}][0m
+[0;32mI (108411) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (108671) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":38}
+[0;32mI (111991) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":39}][0m
+[0;32mI (112031) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (112281) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":39}
+[0;32mI (115601) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":40}][0m
+[0;32mI (115641) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (115891) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":40}
+[0;32mI (116801) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (116861) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (118651) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (118691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (118951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (119301) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (119361) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (119591) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (119631) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (120001) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (120291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (120351) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (120591) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (120631) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (120761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (120981) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (121201) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":41}][0m
+[0;32mI (121241) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (121501) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":41}
+[0;32mI (123481) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (123541) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (124251) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (124291) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (124551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (124891) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (124941) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (125191) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (125231) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (125581) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (125871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (125911) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (126161) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (126201) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (126551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (126801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (130391) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":42}][0m
+[0;32mI (130431) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (130691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":42}
+[0;32mI (131601) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (131661) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (132841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (133441) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (133481) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (133741) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (134031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (134091) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (134331) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (134371) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (134731) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (135021) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (135081) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (135321) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (135361) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (135711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (135931) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":42}][0m
+[0;32mI (135971) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (136221) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":42}
+[0;32mI (137131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (137171) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (138841) Timer: 1 hour has passed![0m
+[0;32mI (138981) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (139031) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (139281) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (139591) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (139641) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (139891) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (139931) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (140271) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (140571) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (140611) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (140861) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (140901) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (141271) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (141481) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":43}][0m
+[0;32mI (141521) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (141771) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":43}
+[0;32mI (142681) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (142741) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (144531) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (144571) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (144831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (145171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (145211) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (145461) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (145501) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (145841) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (146141) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (146201) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (146441) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (146481) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (146831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (147051) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":43}][0m
+[0;32mI (147091) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (147371) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":43}
+[0;32mI (148291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (148351) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (150101) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (150151) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (150401) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (150721) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (150761) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (151011) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (151051) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (151391) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (152231) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (152271) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (152521) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (152561) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (152901) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (153141) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":43}][0m
+[0;32mI (153181) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (153441) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":43}
+[0;32mI (154901) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (154961) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (156191) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (156231) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (156491) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (156801) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (156861) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (157101) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (157141) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (157501) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (157781) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (157841) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (158081) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (158121) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (158471) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (158691) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":43}][0m
+[0;32mI (158731) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (158991) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":43}
+[0;32mI (160381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (160441) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (161741) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (161781) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (162051) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (162341) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (162401) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (162631) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (162681) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (163041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (163351) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (163411) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (163641) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (163691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (164051) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (164261) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":43}][0m
+[0;32mI (164301) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (164561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":43}
+[0;32mI (165831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (165891) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (180761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (186801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (187841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (190881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (193921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (196961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (200001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (208041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (209081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (212121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (215161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (218201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (221241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (229241) Timer: 1 hour has passed![0m
+[0;32mI (233701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (233761) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (234001) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (234041) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (234361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (240761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (246801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (247411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":44}][0m
+[0;32mI (247451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (247711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":44}
+[0;32mI (248661) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (248721) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (248961) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (249001) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (249361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (252841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (257091) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (257151) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (257391) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (257431) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (257781) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (258001) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":44}][0m
+[0;32mI (258041) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (258301) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":44}
+[0;32mI (258841) Timer: 1 hour has passed![0m
+[0;32mI (259301) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (259361) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (261051) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (261101) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (261361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (300761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (306801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (307411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":44}][0m
+[0;32mI (307451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (307731) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":44}
+[0;32mI (308881) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (308931) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (309181) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (309221) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (309601) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (312841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (318841) Timer: 1 hour has passed![0m
+[0;32mI (348361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (348401) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (348651) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (348691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (349041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (349261) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (349311) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (350781) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (350841) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (351311) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (351351) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (351601) LORA: 19 byte packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (351661) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (351941) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (352211) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (352271) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (352511) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (353531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (353591) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (357271) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (357311) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (357561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (360761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (361351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (361401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (361651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (366801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (367411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":44}][0m
+[0;32mI (367451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (367721) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":44}
+[0;32mI (368701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (368761) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (369001) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (369041) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (369421) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (372841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (378841) Timer: 1 hour has passed![0m
+[0;32mI (420761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (421351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (421391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (421651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (422611) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (422671) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (422901) LORA: 19 byte packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (422941) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (423311) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (423511) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (423551) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (423821) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (424761) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (424801) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (426801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (427411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":44}][0m
+[0;32mI (427451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (427711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":44}
+[0;32mI (428721) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (428781) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (429021) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (429061) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (429411) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (432841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (434731) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (434771) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (435031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (436531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (436581) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (438841) Timer: 1 hour has passed![0m
+[0;32mI (440341) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (440381) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (440631) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (441621) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (441681) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (445941) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (446001) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (446241) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (447151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (447211) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (451551) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":3}][0m
+[0;32mI (451591) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (451851) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":3}
+[0;32mI (453031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (453071) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (457161) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":39}][0m
+[0;32mI (457211) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (457461) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":39}
+[0;32mI (462781) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":38}][0m
+[0;32mI (462821) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (463081) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":38}
+[0;32mI (468391) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":52}][0m
+[0;32mI (468431) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (468691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":52}
+[0;32mI (469671) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (469721) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (473441) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (473481) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (473741) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (480761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (481361) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":51}][0m
+[0;32mI (481401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (482301) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":51}
+[0;32mI (482671) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (482721) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (482971) LORA: 19 byte packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (483011) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (485451) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (486801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (492841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (493881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (496921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (499961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (503001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (506041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (514041) Timer: 1 hour has passed![0m
+[0;32mI (540761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (541801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (544841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (547881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (550921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (553961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (562001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (563041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (566081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (569121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (572161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (575201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (583241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (584281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (587321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (590361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (593401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (596441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (604441) Timer: 1 hour has passed![0m
+[0;32mI (604481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (605521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (608561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (611601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (614641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (617681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (625721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (626761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (629801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (632841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (635881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (638921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (646961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (648001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (651041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (654081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (657121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (660161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (668161) Timer: 1 hour has passed![0m
+[0;32mI (668201) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (669241) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (672281) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (675321) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (678361) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (681401) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (689441) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (690481) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (693521) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (696561) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (699601) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (702641) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (710681) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (711721) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (714761) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (717801) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (720841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (723881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (731881) Timer: 1 hour has passed![0m
+[0;32mI (731921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (732961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (736001) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (739041) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (742081) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (745121) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (753161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (754201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (757241) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (760281) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (763321) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (766361) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (774401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (775441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (778481) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (781521) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (784561) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (787601) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (795601) Timer: 1 hour has passed![0m
+[0;32mI (795641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (796681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (799721) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (802761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (805801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (808841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (816881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (817921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (820961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (824001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (827041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (830081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (838121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (839161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (842201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (845241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (848281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (851321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (859321) Timer: 1 hour has passed![0m
+[0;32mI (859361) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (860401) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (863441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (866481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (869521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (872561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (880601) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (881641) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (884681) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (887721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (890761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (893801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (901841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (902881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (905921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (908961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (912001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (915041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (923041) Timer: 1 hour has passed![0m
+[0;32mI (923081) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (924121) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (927161) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (930201) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (933241) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (936281) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (944321) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (945361) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (948401) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (951441) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (954481) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (957521) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (965561) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (966601) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (969641) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (972681) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (975721) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (978761) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (986761) Timer: 1 hour has passed![0m
+[0;32mI (986801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (987841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (990881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (993921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (996961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1000001) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1008041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1009081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1012121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1015161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1018201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1021241) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1029281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1030321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1033361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1036401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1039441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1042481) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1050481) Timer: 1 hour has passed![0m
+[0;32mI (1050521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1051561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1054601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1057641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1060681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1063721) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1071761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1072801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1075841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1078881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1081921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1084961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1093001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1094041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1097081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1100121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1103161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1106201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1114201) Timer: 1 hour has passed![0m
+[0;32mI (1114241) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1115281) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1118321) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1121361) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1124401) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1127441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4af74h (307060) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005af9c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005eca4 vaddr=40080000 size=01374h (  4980) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a7594h (685460) map[0m
+[0;32mI (459) esp_image: segment 4: paddr=001075bc vaddr=40081374 size=17354h ( 95060) load[0m
+[0;32mI (509) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (509) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (538) cpu_start: App version:      1[0m
+[0;32mI (542) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  b918d7403...[0m
+[0;32mI (554) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (559) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (564) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (569) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (574) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (581) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (587) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (593) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (606) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (617) spi_flash: flash io: dio[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+[0;32mI (701) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (701) nvs: Quantity = 3[0m
+Quantity: 3
+[0;32mI (701) main_task: Returned from app_main()[0m
+[0;32mI (751) wifi_init: rx ba win: 6[0m
+[0;32mI (751) wifi_init: tcpip mbox: 32[0m
+[0;32mI (751) wifi_init: udp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp tx win: 5760[0m
+[0;32mI (761) wifi_init: tcp rx win: 5760[0m
+[0;32mI (761) wifi_init: tcp mss: 1440[0m
+[0;32mI (771) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (771) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1301) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1461) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1461) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1461) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1461) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1471) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: Hai Nam Password: 23581104
+[0;32mI (1481) wifi_app: Loaded station configuration[0m
+[0;32mI (1491) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1501) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1511) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (2311) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (5321) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (5321) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6511) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (6511) MQTT: MQTT_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (6511) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+[0;32mI (6531) MQTT: Loaded MQTT configuration[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+ESP32
+
+[0;32mI (6541) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (6541) MQTT: Other event id:7[0m
+[0;32mI (6541) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (9191) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9201) MQTT: sent subscribe successful, msg_id=41100[0m
+[0;32mI (9201) MQTT: sent subscribe successful, msg_id=43851[0m
+[0;32mI (9491) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=41100[0m
+[0;32mI (9491) MQTT: sent publish successful[0m
+[0;32mI (9491) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (9491) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (9511) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (9501) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (9771) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=43851[0m
+[0;32mI (9771) MQTT: sent publish successful[0m
+[0;32mI (9771) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (9781) MQTT_APP: app_nvs_save_mqtt_creds: Saving MQTT credentials to flash[0m
+[0;32mI (9791) MQTT_APP: app_nvs_save_mqtt_creds: wrote mqtt_cfg: URI: mqtt://mqtt.flespi.io Client ID: ESP32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: [0m
+[0;32mI (9791) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (11511) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (11511) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (60761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (61801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (64841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (67881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (70921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (73961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (82001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (82611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (82651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (82901) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (84841) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (84901) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (85141) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (85181) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (85531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (85751) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (85791) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (85881) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (85941) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (86031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (88041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (88131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (88191) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (91351) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (91401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (91651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (92611) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (92671) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (94041) Timer: 1 hour has passed![0m
+[0;32mI (96971) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":39}][0m
+[0;32mI (97011) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (97261) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":39}
+[0;32mI (102581) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":38}][0m
+[0;32mI (102621) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (102871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":38}
+[0;32mI (108191) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":37}][0m
+[0;32mI (108231) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (108481) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":37}
+[0;32mI (113801) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":35}][0m
+[0;32mI (113851) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (114101) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":35}
+[0;32mI (119421) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":36}][0m
+[0;32mI (119461) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (119711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":36}
+[0;32mI (120761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (125031) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":37}][0m
+[0;32mI (125071) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (125321) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":37}
+[0;32mI (126801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (128491) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (128551) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (130081) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (130121) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (130381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (130751) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (130811) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (131411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":39}][0m
+[0;32mI (131451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (131711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":39}
+[0;32mI (131761) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (131811) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (132051) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (132841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (133181) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (133241) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (138841) Timer: 1 hour has passed![0m
+[0;32mI (180761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (181001) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (181041) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (181291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (186801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (187411) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (187451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (187701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (189101) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (189151) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (192841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (193881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (196921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (199961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (203001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (206041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (214041) Timer: 1 hour has passed![0m
+[0;32mI (240761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (241801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (244841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (247881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (250921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (253961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (259801) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (259851) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (260561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (260611) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (262001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (263041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (266081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (269121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (269731) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":42}][0m
+[0;32mI (269771) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (270021) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":42}
+[0;32mI (271551) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (271601) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (271851) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (271891) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (272221) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (277161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (278201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (281241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (284281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (287321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (290361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (298361) Timer: 1 hour has passed![0m
+[0;32mI (300761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (301801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (304841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (307881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (310921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (313961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (322001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (322611) LORA: 40 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":2}][0m
+[0;32mI (322651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (322901) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":2}
+[0;32mI (323881) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (323941) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (324181) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (324221) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (324611) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (324781) LORA: 40 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":2}][0m
+[0;32mI (324831) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (325081) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":2}
+[0;32mI (326201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (326261) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (328041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (330391) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":2}][0m
+[0;32mI (330431) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (330681) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":2}
+[0;32mI (333061) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (333121) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (334041) Timer: 1 hour has passed![0m
+[0;32mI (336001) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":35}][0m
+[0;32mI (336051) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (336291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":35}
+[0;32mI (337971) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (338011) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (341061) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (341101) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (341361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (360761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (366801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (367411) LORA: 40 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":2}][0m
+[0;32mI (367451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (367701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":2}
+[0;32mI (369951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (370011) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (370251) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (370291) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (370631) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (370861) LORA: 40 byte packet received:[{"ID":1,"temp":30,"hum":89,"adc_val":3}][0m
+[0;32mI (370901) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (371151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":89,"adc_val":3}
+[0;32mI (372171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (372211) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (372841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (376471) LORA: 41 byte packet received:[{"ID":1,"temp":30,"hum":90,"adc_val":36}][0m
+[0;32mI (376511) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (376761) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":90,"adc_val":36}
+[0;32mI (377701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (377741) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (378841) Timer: 1 hour has passed![0m
+[0;32mI (420761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (426801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (427841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (430881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (433921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (436961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (440001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (448041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (449081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (452121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (455161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (458201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (461241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (469241) Timer: 1 hour has passed![0m
+[0;32mI (480761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (481801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (484841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (487881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (490921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (493961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (502001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (503041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (506081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (509121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (512161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (515201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (523241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (523851) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (523891) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (524151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (525151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (525191) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (525441) LORA: 19 byte packet received:[{"ID":2,"relay":1}][0m
+[0;32mI (525481) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (525811) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":1}
+[0;32mI (526051) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (526091) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (527101) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (527931) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (527981) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (529241) Timer: 1 hour has passed![0m
+[0;32mI (540761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (546801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (547411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":34}][0m
+[0;32mI (547451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (548441) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":34}
+[0;32mI (549281) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (549341) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (549571) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (549621) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (549961) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (552841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (558841) Timer: 1 hour has passed![0m
+[0;32mI (600761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (601351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (601391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (602331) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (602691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (602751) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (602991) LORA: 19 byte packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (603031) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (603371) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (603601) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (603641) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (603791) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (603851) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (603891) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (605531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (605591) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (606801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (607411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":38}][0m
+[0;32mI (607451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (607701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":38}
+[0;32mI (609211) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (609231) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (609251) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (609291) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (609911) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (610561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (610621) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (610861) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (610901) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (611201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (612841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (613451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (613491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (613741) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (614811) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (614851) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (615111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (615241) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (615281) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (615531) LORA: 19 byte packet received:[{"ID":2,"relay":1}][0m
+[0;32mI (615571) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (616141) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (616181) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (616751) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (616811) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (617041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":1}
+[0;32mI (617051) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (617481) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (617541) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (618621) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (618671) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (618841) Timer: 1 hour has passed![0m
+[0;32mI (620421) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (620461) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (620711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (621751) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (621791) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (622041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (622801) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (622851) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (623871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (623911) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (626031) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (626071) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (626321) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (627361) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (627401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (631641) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (631681) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (632961) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (633001) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (636031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (636091) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (636091) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (636381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (636441) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (636441) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (636451) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (636511) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (636511) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (636521) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (636581) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (637241) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (637281) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (637541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (638571) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (638611) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (638631) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (638671) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (638871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (640571) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (640631) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (642851) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (642891) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (643201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (644171) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (644221) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (644481) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (645201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (645241) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (646231) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (646281) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (648461) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (648501) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (649791) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":33}][0m
+[0;32mI (649831) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (650111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (650111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (650171) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (650391) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":33}
+[0;32mI (654071) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (654111) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (655041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (655401) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":32}][0m
+[0;32mI (655441) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (655691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":32}
+[0;32mI (656681) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (656731) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (659681) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":31}][0m
+[0;32mI (659721) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (659971) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":31}
+[0;32mI (660761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (661011) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":32}][0m
+[0;32mI (661051) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (661311) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":32}
+[0;32mI (661541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (661601) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (665291) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":31}][0m
+[0;32mI (665331) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (665581) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":31}
+[0;32mI (666621) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":35}][0m
+[0;32mI (666661) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (666801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (666931) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":35}
+[0;32mI (667151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (667211) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (667811) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":41}][0m
+[0;32mI (667851) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (669441) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":41}
+[0;32mI (670901) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":30}][0m
+[0;32mI (670951) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (671211) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":30}
+[0;32mI (672231) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":37}][0m
+[0;32mI (672271) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (672531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":37}
+[0;32mI (672841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (674361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (674421) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (674661) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (674701) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (674971) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (675011) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (675041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (676521) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":30}][0m
+[0;32mI (676561) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (676811) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":30}
+[0;32mI (677841) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":38}][0m
+[0;32mI (677901) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (678141) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":38}
+[0;32mI (678631) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (678691) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (678841) Timer: 1 hour has passed![0m
+[0;32mI (682131) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":30}][0m
+[0;32mI (682171) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (682421) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":30}
+[0;32mI (683451) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":39}][0m
+[0;32mI (683501) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (683621) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (683661) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (683751) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":39}
+[0;32mI (687741) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":31}][0m
+[0;32mI (687781) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (688031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":31}
+[0;32mI (689071) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":39}][0m
+[0;32mI (689111) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (689371) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":39}
+[0;32mI (689691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (689731) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (693351) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":31}][0m
+[0;32mI (693401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (693651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":31}
+[0;32mI (694681) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":39}][0m
+[0;32mI (694721) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (696891) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (696951) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (696951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":39}
+[0;32mI (698971) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":32}][0m
+[0;32mI (699011) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (699261) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":32}
+[0;32mI (700221) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (700281) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (704581) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":32}][0m
+[0;32mI (704621) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (704871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":32}
+[0;32mI (705901) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":40}][0m
+[0;32mI (705911) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (705951) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (705991) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (706191) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":40}
+[0;32mI (707201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (707241) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (710201) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":33}][0m
+[0;32mI (710241) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (710491) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":33}
+[0;32mI (710951) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (710991) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (711241) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (712411) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (712471) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (712471) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (712521) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (713071) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":40}][0m
+[0;32mI (713111) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (713421) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":40}
+[0;32mI (713421) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (713461) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (713711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (714451) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (714491) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (714741) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (714781) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (715111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (715811) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":33}][0m
+[0;32mI (715851) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (716101) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":33}
+[0;32mI (717121) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (717181) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (720761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (721421) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":34}][0m
+[0;32mI (721461) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (721711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":34}
+[0;32mI (724831) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (724871) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (726801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (727041) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":49}][0m
+[0;32mI (727081) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (727411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":43}][0m
+[0;32mI (727431) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":49}
+[0;32mI (727451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (727711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":43}
+[0;32mI (730441) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (730501) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (730501) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (730561) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (732091) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (732131) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (732341) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (732381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (732381) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (732691) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (732791) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (732831) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (732871) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (733441) LORA: 41 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":49}][0m
+[0;32mI (733501) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (733731) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":49}
+[0;32mI (733801) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (733841) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (734061) LORA: 41 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":45}][0m
+[0;32mI (734091) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (734101) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (735031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":45}
+[0;32mI (735041) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (735101) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (735331) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (735381) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (736281) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (736341) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (736561) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (736581) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (736621) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (737181) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (738871) Timer: 1 hour has passed![0m
+[0;32mI (780761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (781351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (781391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (781651) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (786801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (787411) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":7}][0m
+[0;32mI (787451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (787701) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":7}
+[0;32mI (792841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (793451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (793491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (793751) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (798251) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (798311) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (798541) LORA: 19 byte packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (798591) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (798841) Timer: 1 hour has passed![0m
+[0;32mI (798941) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (799161) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (799201) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (799451) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (804761) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (804811) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (805051) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (810371) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (810411) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (810671) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (815981) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (816021) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (816271) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (821591) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (821631) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (821881) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (822381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (822441) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (822671) LORA: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (822721) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (823061) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (823291) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":2}][0m
+[0;32mI (823331) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (823571) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":2}
+[0;32mI (824521) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (824581) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (824821) LORA: 19 byte packet received:[{"ID":2,"relay":1}][0m
+[0;32mI (824861) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (825201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":1}
+[0;32mI (825431) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (825471) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (825711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (826681) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (826721) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (827201) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (827241) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (827491) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (828531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (828581) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (828891) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":2}][0m
+[0;32mI (828931) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (829201) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":2}
+[0;32mI (830011) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (830071) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (830481) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (830521) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (831381) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (832251) LORA: 19 byte packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (832291) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (832541) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (833951) LORA: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (833991) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (834241) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (840761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (846801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (847841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (850881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (853921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (856961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (860001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (868041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (869081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (872121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (875161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (878201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (881241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (889241) Timer: 1 hour has passed![0m
+[0;32mI (900761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (901801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (904841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (907881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (910921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (913961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (922001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (923041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (926081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (926691) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":2}][0m
+[0;32mI (926731) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (926981) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":2}
+[0;32mI (934121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (934731) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (934771) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (935021) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (940121) Timer: 1 hour has passed![0m
+[0;32mI (960761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (961351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":87,"adc_val":2}][0m
+[0;32mI (961401) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (961641) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":87,"adc_val":2}
+[0;32mI (966801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (967411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":91,"adc_val":37}][0m
+[0;32mI (967451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (967761) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":91,"adc_val":37}
+[0;32mI (972841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (973451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (973491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (974011) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (978841) Timer: 1 hour has passed![0m
+[0;32mI (1020761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1021801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1024841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1027881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1030921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1033961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1042001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1043041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1046081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1049121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1052161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1055201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1063241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1064281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1067321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1070361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1073401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1076441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1084441) Timer: 1 hour has passed![0m
+[0;32mI (1084481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1085521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1088561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1091601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1094641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1097681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1105721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1106761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1109801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1112841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1115881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1118921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1126961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1128001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1131041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1134081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1137121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1140161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1148161) Timer: 1 hour has passed![0m
+[0;32mI (1148201) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1149241) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1150721) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1150781) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1151131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1151181) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1151181) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1151231) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1151231) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1151291) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1151291) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1151351) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1151361) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1151401) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1152281) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1155321) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1155931) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (1155971) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1159511) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (1163361) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1163971) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":33}][0m
+[0;32mI (1164011) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1166931) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":33}
+[0;32mI (1169401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1170011) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1170051) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1170521) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1175401) Timer: 1 hour has passed![0m
+[0;32mI (1200761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1201351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (1201391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1201871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (1206801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1207411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":36}][0m
+[0;32mI (1207451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1209081) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":36}
+[0;32mI (1212841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1213451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1213491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1218841) Timer: 1 hour has passed![0m
+[0;32mI (1230171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1260761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1261351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (1261391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1261861) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (1266801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1267411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1267451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1267931) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1272841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1273451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1273491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1273951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1278841) Timer: 1 hour has passed![0m
+[0;32mI (1320761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1321351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (1321391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1322991) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (1326801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1327411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":38}][0m
+[0;32mI (1327451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1327941) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":38}
+[0;32mI (1332841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1333451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1333491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1333971) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1338841) Timer: 1 hour has passed![0m
+[0;32mI (1380761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1381351) LORA: 40 byte packet received:[{"ID":0,"temp":28,"hum":88,"adc_val":2}][0m
+[0;32mI (1381391) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1381881) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":28,"hum":88,"adc_val":2}
+[0;32mI (1386801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1387411) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":38}][0m
+[0;32mI (1387451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1387921) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":38}
+[0;32mI (1392841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1393451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1393491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1395011) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1398841) Timer: 1 hour has passed![0m
+[0;32mI (1440761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1441801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1444841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1447881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1450921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1453961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1462001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1462611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":38}][0m
+[0;32mI (1462651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1463161) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":38}
+[0;32mI (1468041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1468651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1468691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1469161) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1474041) Timer: 1 hour has passed![0m
+[0;32mI (1500761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1501801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1504841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1507881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1510921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1513961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1522001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1522611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":38}][0m
+[0;32mI (1522651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1526031) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":38}
+[0;32mI (1528041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1528651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1528691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1529171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1534041) Timer: 1 hour has passed![0m
+[0;32mI (1560761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1561801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1564841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1567881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1570921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1573961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1582001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1582611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1582651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1583131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1588041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1588651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1588691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1589171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1594041) Timer: 1 hour has passed![0m
+[0;32mI (1620761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1621801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1624841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1627881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1630921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1633961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1642001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1642611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1642651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1643151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1648041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1648651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1648691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1650131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1654041) Timer: 1 hour has passed![0m
+[0;32mI (1680761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1681801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1684841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1687881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1690921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1693961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1702001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1702611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1702651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1703121) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1708041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1708651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1708691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1709171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1714041) Timer: 1 hour has passed![0m
+[0;32mI (1740761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1741801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1744841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1747881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1750921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1753961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1762001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1762611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1762651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1763141) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1768041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1768651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1768691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1770111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1774041) Timer: 1 hour has passed![0m
+[0;32mI (1800761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1801801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1804841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1807881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1809591) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1809651) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1810921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1812891) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1812951) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1812951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1813001) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1813001) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1813061) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1813061) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1813121) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1813131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1813171) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1813961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1814211) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (1814251) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1821841) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (1822001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1822611) LORA: 41 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":39}][0m
+[0;32mI (1822651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1823151) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":39}
+[0;32mI (1828041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1828651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1828691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1830121) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1834041) Timer: 1 hour has passed![0m
+[0;32mI (1860761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1861801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1864841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1867881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1870921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1873961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1882001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1882611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":4}][0m
+[0;32mI (1882651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1884111) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":4}
+[0;32mI (1888041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1888651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1888691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1889141) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1894041) Timer: 1 hour has passed![0m
+[0;32mI (1920761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1921801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1924841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1927881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1930921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1933961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1942001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1942611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":3}][0m
+[0;32mI (1942651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1943131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":3}
+[0;32mI (1948041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1948651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1948691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1950161) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1954041) Timer: 1 hour has passed![0m
+[0;32mI (1967911) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1967971) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1968471) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1968531) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1968531) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1968591) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1968591) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (1968641) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (1968641) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1968701) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1968711) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (1968751) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (1980761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1981001) LORA: 19 byte packet received:[{"ID":2,"relay":0}][0m
+[0;32mI (1981041) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1982461) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"relay":0}
+[0;32mI (1986801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1987411) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":5}][0m
+[0;32mI (1987451) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1987871) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":5}
+[0;32mI (1992841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1993451) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (1993491) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1993951) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (1998841) Timer: 1 hour has passed![0m
+[0;32mI (2040761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2041801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2044841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2047881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2050921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2053961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2062001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2062611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":6}][0m
+[0;32mI (2062651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2063131) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":6}
+[0;32mI (2068041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2068651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (2068691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2069171) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}
+[0;32mI (2074041) Timer: 1 hour has passed![0m
+[0;32mI (2100761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2101801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2104841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2107881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2110921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2113961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2122001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2122611) LORA: 40 byte packet received:[{"ID":1,"temp":29,"hum":90,"adc_val":5}][0m
+[0;32mI (2122651) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2123991) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":29,"hum":90,"adc_val":5}
+[0;32mI (2128041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2128651) LORA: 40 byte packet received:[{"ID":2,"temp":28,"hum":98,"adc_val":3}][0m
+[0;32mI (2128691) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2134041) Timer: 1 hour has passed![0m
+[0;32mI (2134611) MQTT: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":28,"hum":98,"adc_val":3}

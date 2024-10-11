@@ -1,0 +1,1006 @@
+ets Jul 2�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265bch (157116) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365e4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2cc vaddr=40080000 size=05d4ch ( 23884) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ccf4h (642292) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd1c vaddr=40085d4c size=1297ch ( 76156) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  9953f06b5...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D0 len 00027C30 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (541) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (548) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (622) wifi station: STARTING WIFI APPLICATION[0m
+I (632) wifi:wifi driver task: 3ffc0888, prio:23, stack:6656, core=0
+I (652) wifi:wifi firmware version: 3e0076f
+I (652) wifi:wifi certification version: v7.0
+I (652) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (662) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (682) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (812) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (812) wifi:enable tsf
+[0;32mI (812) wifi station: wifi_init_sta finished.[0m
+I (832) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (832) wifi:state: init -> auth (b0)
+I (1832) wifi:state: auth -> init (200)
+I (1832) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (1832) wifi station: retry to connect to the AP[0m
+[0;32mI (1832) wifi station: connect to the AP fail[0m
+[0;32mI (4252) wifi station: retry to connect to the AP[0m
+[0;32mI (4252) wifi station: connect to the AP fail[0m
+I (4272) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (4272) wifi:state: init -> auth (b0)
+I (4292) wifi:state: auth -> assoc (0)
+I (4302) wifi:state: assoc -> run (10)
+I (4322) wifi:connected with Hai Nam, aid = 3, channel 3, BW20, bssid = 22:87:ec:29:e8:b0
+I (4322) wifi:security: WPA2-PSK, phy: bgn, rssi: -49
+I (4332) wifi:pm start, type: 1
+
+I (4332) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (4372) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (7342) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (7342) wifi station: got ip:192.168.1.12[0m
+[0;32mI (7342) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (7352) MQTT_EXAMPLE: Other event id:7[0m
+I (8162) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (8472) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8482) MQTT_EXAMPLE: sent subscribe successful, msg_id=15462[0m
+[0;32mI (8482) MQTT_EXAMPLE: sent subscribe successful, msg_id=19975[0m
+[0;32mI (8792) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=15462[0m
+[0;32mI (8792) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (9192) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=19975[0m
+[0;32mI (9192) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (12362) main_task: Returned from app_main()[0m
+[0;32mI (72402) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (83442) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (94482) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (105482) Timer: 1 hour has passed![0m
+
+abort() was called at PC 0x40082a63 on core 0
+
+
+Backtrace: 0x4008189e:0x3ffc01c0 0x40089ce9:0x3ffc01e0 0x40092651:0x3ffc0200 0x40082a63:0x3ffc0270 0x40082ba1:0x3ffc02a0 0x40082c1a:0x3ffc02c0 0x401593e6:0x3ffc02f0 0x40155301:0x3ffc0610 0x4016b689:0x3ffc0640 0x40090fbd:0x3ffc0670 0x40106942:0x3ffc06c0 0x4012210a:0x3ffc0730 0x40096439:0x3ffc0770 0x40168882:0x3ffc0790 0x401688e9:0x3ffc07b0 0x40094286:0x3ffc07d0 0x4008a7f5:0x3ffc0800
+
+
+
+
+ELF file SHA256: 9953f06b5
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265bch (157116) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365e4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2cc vaddr=40080000 size=05d4ch ( 23884) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ccf4h (642292) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd1c vaddr=40085d4c size=1297ch ( 76156) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (457) cpu_start: Pro cpu start user code[0m
+[0;32mI (457) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (460) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  9953f06b5...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D0 len 00027C30 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (544) spi_flash: flash io: dio[0m
+[0;33mW (547) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (562) main_task: Started on CPU0[0m
+[0;32mI (572) main_task: Calling app_main()[0m
+[0;32mI (622) wifi station: STARTING WIFI APPLICATION[0m
+I (632) wifi:wifi driver task: 3ffc0888, prio:23, stack:6656, core=0
+I (652) wifi:wifi firmware version: 3e0076f
+I (652) wifi:wifi certification version: v7.0
+I (652) wifi:config NVS flash: enabled
+I (652) wifi:config nano formating: disabled
+I (652) wifi:Init data frame dynamic rx buffer num: 32
+I (662) wifi:Init static rx mgmt buffer num: 5
+I (662) wifi:Init management short buffer num: 32
+I (662) wifi:Init dynamic tx buffer num: 32
+I (672) wifi:Init static rx buffer size: 1600
+I (672) wifi:Init static rx buffer num: 10
+I (682) wifi:Init dynamic rx buffer num: 32
+[0;32mI (682) wifi_init: rx ba win: 6[0m
+[0;32mI (682) wifi_init: tcpip mbox: 32[0m
+[0;32mI (692) wifi_init: udp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp mbox: 6[0m
+[0;32mI (692) wifi_init: tcp tx win: 5760[0m
+[0;32mI (702) wifi_init: tcp rx win: 5760[0m
+[0;32mI (702) wifi_init: tcp mss: 1440[0m
+[0;32mI (712) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (712) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (722) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (812) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (812) wifi:enable tsf
+[0;32mI (812) wifi station: wifi_init_sta finished.[0m
+I (832) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (832) wifi:state: init -> auth (b0)
+I (1832) wifi:state: auth -> init (200)
+I (1832) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (1832) wifi station: retry to connect to the AP[0m
+[0;32mI (1832) wifi station: connect to the AP fail[0m
+[0;32mI (4252) wifi station: retry to connect to the AP[0m
+[0;32mI (4252) wifi station: connect to the AP fail[0m
+I (4322) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (4322) wifi:state: init -> auth (b0)
+I (5322) wifi:state: auth -> init (200)
+I (5322) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (5322) wifi station: retry to connect to the AP[0m
+[0;32mI (5322) wifi station: connect to the AP fail[0m
+[0;32mI (7742) wifi station: retry to connect to the AP[0m
+[0;32mI (7742) wifi station: connect to the AP fail[0m
+I (7802) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (7802) wifi:state: init -> auth (b0)
+I (7822) wifi:state: auth -> assoc (0)
+I (7822) wifi:state: assoc -> run (10)
+I (7852) wifi:connected with Hai Nam, aid = 3, channel 3, BW20, bssid = 22:87:ec:29:e8:b0
+I (7852) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (7862) wifi:pm start, type: 1
+
+I (7862) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us
+I (7902) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (10862) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (10862) wifi station: got ip:192.168.1.12[0m
+[0;32mI (10862) wifi station: connected to ap SSID:Hai Nam password:23581104[0m
+[0;32mI (10872) MQTT_EXAMPLE: Other event id:7[0m
+I (11282) wifi:<ba-add>idx:0 (ifx:0, 22:87:ec:29:e8:b0), tid:0, ssn:1, winSize:64
+[0;32mI (12622) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (12622) MQTT_EXAMPLE: sent subscribe successful, msg_id=55509[0m
+[0;32mI (12622) MQTT_EXAMPLE: sent subscribe successful, msg_id=63198[0m
+[0;32mI (13022) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=55509[0m
+[0;32mI (13032) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (13332) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=63198[0m
+[0;32mI (13332) MQTT_EXAMPLE: sent publish successful[0m
+[0;32mI (15882) main_task: Returned from app_main()[0m
+[0;32mI (46822) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (46862) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (58392) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (58452) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (58492) Timer: packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (59102) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":5}][0m
+[0;32mI (67602) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (67662) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (67662) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (67722) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (67722) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (67782) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (67782) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (67782) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":5}
+[0;32mI (75922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (75982) Timer: 19 byte packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (76022) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (76462) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (77062) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (77672) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (77712) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (78152) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (78752) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (89752) Timer: 1 hour has passed![0m
+[0;32mI (106622) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (106662) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (106722) Timer: packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (107332) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":6}][0m
+[0;32mI (107742) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (112462) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":6}
+[0;32mI (113172) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (113232) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (129152) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (129192) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (129252) Timer: packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (129862) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":4}][0m
+[0;32mI (130282) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (130782) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":4}
+[0;32mI (135922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (140462) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (140502) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (140742) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (141542) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (141792) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (141852) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (152582) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (153192) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (153232) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (153392) Timer: packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (153472) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (153752) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (154232) Timer: 1 hour has passed![0m
+[0;32mI (195922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (206962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (207572) Timer: 0 byte packet received:[][0m
+[0;32mI (207612) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (207852) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA=#
+[0;32mI (208652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (219652) Timer: 1 hour has passed![0m
+[0;32mI (255922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (266962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (278002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (289002) Timer: 1 hour has passed![0m
+[0;32mI (315922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (326962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (338002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (349002) Timer: 1 hour has passed![0m
+[0;32mI (375922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (386962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (398002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (409002) Timer: 1 hour has passed![0m
+[0;32mI (435922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (446962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (458002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (469002) Timer: 1 hour has passed![0m
+[0;32mI (495922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (506962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (518002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (529002) Timer: 1 hour has passed![0m
+[0;32mI (555922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (566962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (578002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (589002) Timer: 1 hour has passed![0m
+[0;32mI (615922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (626962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (638002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (649002) Timer: 1 hour has passed![0m
+[0;32mI (670122) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (670182) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (670182) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (670242) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (670242) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (670302) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (670432) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (670492) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (670832) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (671152) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (675922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (681442) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":5}][0m
+[0;32mI (681482) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (681732) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":5}
+[0;32mI (682522) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (692052) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":5}][0m
+[0;32mI (692092) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (692342) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":5}
+[0;32mI (693132) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (702652) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (702692) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (702982) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (703692) Timer: 1 hour has passed![0m
+[0;32mI (713262) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (713642) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (723862) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":5}][0m
+[0;32mI (724192) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":5}
+[0;32mI (734472) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (734842) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (735922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (745082) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":5}][0m
+[0;32mI (745122) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (745362) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":5}
+[0;32mI (746162) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (755682) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (755722) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (755962) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (756762) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (766292) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (766332) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (766572) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (767332) Timer: 1 hour has passed![0m
+[0;32mI (775802) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (775862) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (795922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (796532) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (796572) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (796702) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (796812) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (796872) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (797092) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (797372) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (797612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (798222) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (798262) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (798502) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (799302) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (810302) Timer: 1 hour has passed![0m
+[0;32mI (855922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (866962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (878002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (889002) Timer: 1 hour has passed![0m
+[0;32mI (915922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (926962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (938002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (949002) Timer: 1 hour has passed![0m
+[0;32mI (975922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (986962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (998002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1009002) Timer: 1 hour has passed![0m
+[0;32mI (1035922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1046962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1058002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1069002) Timer: 1 hour has passed![0m
+[0;32mI (1095922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1106962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1118002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1129002) Timer: 1 hour has passed![0m
+[0;32mI (1155922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1166962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1178002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1189002) Timer: 1 hour has passed![0m
+[0;32mI (1215922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1226962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1238002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1249002) Timer: 1 hour has passed![0m
+[0;32mI (1275922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1286962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1298002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1309002) Timer: 1 hour has passed![0m
+[0;32mI (1335922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1346962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1358002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1369002) Timer: 1 hour has passed![0m
+[0;32mI (1395922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1406962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1418002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1429002) Timer: 1 hour has passed![0m
+[0;32mI (1455922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1466962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1478002) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1487742) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (1487802) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (1487842) Timer: 19 byte packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (1487882) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1488352) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (1488452) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":7}][0m
+[0;32mI (1488732) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":7}
+[0;32mI (1488882) Timer: 1 hour has passed![0m
+[0;32mI (1499062) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (1499452) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (1509662) Timer: packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":3}][0m
+[0;32mI (1510002) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":3}
+[0;32mI (1515922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1520272) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":6}][0m
+[0;32mI (1520312) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1520562) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":6}
+[0;32mI (1521352) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1523302) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1523362) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1532392) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1533002) Timer: 38 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":2}][0m
+[0;32mI (1533042) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1533202) Timer: packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (1533282) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":2}
+[0;32mI (1533572) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (1534042) Timer: 1 hour has passed![0m
+[0;32mI (1575922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1586962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1587572) Timer: 39 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":63}][0m
+[0;32mI (1587612) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1587862) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":63}
+[0;32mI (1588652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1599652) Timer: 1 hour has passed![0m
+[0;32mI (1635922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1646962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1647572) Timer: 39 byte packet received:[{"ID":1,"temp":0,"hum":0,"adc_val":63}][0m
+[0;32mI (1647612) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1647852) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":0,"hum":0,"adc_val":63}
+[0;32mI (1648652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1659652) Timer: 1 hour has passed![0m
+[0;32mI (1695922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1706962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1707572) Timer: 40 byte packet received:[{"ID":1,"temp":30,"hum":81,"adc_val":2}][0m
+[0;32mI (1707612) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1707852) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":81,"adc_val":2}
+[0;32mI (1708652) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1719652) Timer: 1 hour has passed![0m
+[0;32mI (1755922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1766962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1767582) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":83,"adc_val":60}][0m
+[0;32mI (1767622) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1767872) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":83,"adc_val":60}
+[0;32mI (1768662) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1779662) Timer: 1 hour has passed![0m
+[0;32mI (1815922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1826962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1827582) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":81,"adc_val":59}][0m
+[0;32mI (1827622) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1827862) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":81,"adc_val":59}
+[0;32mI (1828662) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1839662) Timer: 1 hour has passed![0m
+[0;32mI (1855402) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (1855442) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (1855502) Timer: packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (1856112) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (1856112) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":59}][0m
+[0;32mI (1856422) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":59}
+[0;32mI (1866732) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":59}][0m
+[0;32mI (1867072) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":59}
+[0;32mI (1875922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1877342) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":59}][0m
+[0;32mI (1877382) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1877632) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":59}
+[0;32mI (1878422) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1883022) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (1883082) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (1889462) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1890082) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":59}][0m
+[0;32mI (1890122) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1890282) Timer: packet received:[{"ID":1,"relay":0}][0m
+[0;32mI (1890362) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":59}
+[0;32mI (1890642) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":0}
+[0;32mI (1891122) Timer: 1 hour has passed![0m
+[0;32mI (1935922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (1946962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (1947572) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":57}][0m
+[0;32mI (1947862) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":57}
+[0;32mI (1949672) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":57}][0m
+[0;32mI (1949712) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (1949952) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":57}
+[0;32mI (1950752) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (1961752) Timer: 1 hour has passed![0m
+[0;32mI (1995922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2006962) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2007582) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":57}][0m
+[0;32mI (2007622) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2007862) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":57}
+[0;32mI (2008662) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2019662) Timer: 1 hour has passed![0m
+[0;32mI (2048722) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (2048782) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (2048822) Timer: packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (2049442) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (2055922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2056532) Timer: 38 byte packet received:[{"ID":0,"temp":0,"hum":0,"adc_val":3}][0m
+[0;32mI (2056572) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2056812) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":0,"hum":0,"adc_val":3}
+[0;32mI (2057612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2058232) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":56}][0m
+[0;32mI (2058272) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2058512) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":56}
+[0;32mI (2059312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2070312) Timer: 1 hour has passed![0m
+[0;32mI (2070842) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (2070902) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (2080772) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID2
+[0;32mI (2080832) LORA_SEND_PACKET: Sending packet: ON_ID2[0m
+[0;32mI (2082102) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID2
+[0;32mI (2082152) LORA_SEND_PACKET: Sending packet: OFF_ID2[0m
+[0;32mI (2088042) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (2088102) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (2106272) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (2106332) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (2109752) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (2109812) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (2109852) Timer: packet received:[{"ID":1,"relay":1}][0m
+[0;32mI (2110472) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":55}][0m
+[0;32mI (2110472) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"relay":1}
+[0;32mI (2110782) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":55}
+[0;32mI (2115922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2121082) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":55}][0m
+[0;32mI (2121092) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (2121092) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (2121142) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2121522) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":55}
+[0;32mI (2122182) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2131692) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":55}][0m
+[0;32mI (2131732) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2131982) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":55}
+[0;32mI (2132772) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2142302) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":55}][0m
+[0;32mI (2142342) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2142582) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":55}
+[0;32mI (2143342) Timer: 1 hour has passed![0m
+[0;32mI (2152922) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":55}][0m
+[0;32mI (2153272) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":55}
+[0;32mI (2156342) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID1
+[0;32mI (2156392) LORA_SEND_PACKET: Sending packet: ON_ID1[0m
+[0;32mI (2159522) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+[0;32mI (2159582) LORA_SEND_PACKET: Sending packet: OFF_ID1[0m
+[0;32mI (2175922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2176542) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":56}][0m
+[0;32mI (2176582) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2176722) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":56}][0m
+[0;32mI (2176822) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":56}
+[0;32mI (2176902) Timer: packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":56}][0m
+[0;32mI (2177112) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":56}
+[0;32mI (2177392) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":56}
+[0;32mI (2177622) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2178242) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":81,"adc_val":56}][0m
+[0;32mI (2178282) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2178542) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":81,"adc_val":56}
+[0;32mI (2179322) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2190322) Timer: 1 hour has passed![0m
+[0;32mI (2209392) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=ON_ID0
+[0;32mI (2209452) LORA_SEND_PACKET: Sending packet: ON_ID0[0m
+[0;32mI (2209492) Timer: packet received:[{"ID":0,"relay":1}][0m
+[0;32mI (2210102) Timer: packet received:[{"ID":0,"temp":29,"hum":87,"adc_val":3}][0m
+[0;32mI (2210312) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":1}
+[0;32mI (2210722) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":29,"hum":87,"adc_val":3}
+[0;32mI (2211132) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (2211192) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (2235922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2236532) Timer: 40 byte packet received:[{"ID":0,"temp":29,"hum":88,"adc_val":3}][0m
+[0;32mI (2236572) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2236732) Timer: packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (2236872) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":29,"hum":88,"adc_val":3}
+[0;32mI (2237202) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"relay":0}
+[0;32mI (2237612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2238232) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":81,"adc_val":55}][0m
+[0;32mI (2238272) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2238562) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":81,"adc_val":55}
+[0;32mI (2239312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2239922) Timer: 40 byte packet received:[{"ID":2,"temp":31,"hum":83,"adc_val":1}][0m
+[0;32mI (2239962) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2240262) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":31,"hum":83,"adc_val":1}
+[0;32mI (2240962) Timer: 1 hour has passed![0m
+[0;32mI (2295922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2296532) Timer: 40 byte packet received:[{"ID":0,"temp":29,"hum":87,"adc_val":3}][0m
+[0;32mI (2296572) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2296862) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":29,"hum":87,"adc_val":3}
+[0;32mI (2297612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2298232) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":81,"adc_val":55}][0m
+[0;32mI (2298272) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2299312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2299372) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":81,"adc_val":55}
+[0;32mI (2299922) Timer: 40 byte packet received:[{"ID":2,"temp":31,"hum":83,"adc_val":1}][0m
+[0;32mI (2299962) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2300262) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":31,"hum":83,"adc_val":1}
+[0;32mI (2300962) Timer: 1 hour has passed![0m
+[0;32mI (2355922) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (2356532) Timer: 40 byte packet received:[{"ID":0,"temp":29,"hum":87,"adc_val":3}][0m
+[0;32mI (2356572) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2356872) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":0,"temp":29,"hum":87,"adc_val":3}
+[0;32mI (2357612) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (2358232) Timer: 41 byte packet received:[{"ID":1,"temp":30,"hum":80,"adc_val":54}][0m
+[0;32mI (2358272) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2358562) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":1,"temp":30,"hum":80,"adc_val":54}
+[0;32mI (2359312) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (2359922) Timer: 40 byte packet received:[{"ID":2,"temp":31,"hum":83,"adc_val":1}][0m
+[0;32mI (2359962) LORA_SEND_PACKET: Sending packet: 200[0m
+[0;32mI (2360252) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos0
+DATA={"ID":2,"temp":31,"hum":83,"adc_val":1}
+[0;32mI (2360962) Timer: 1 hour has passed![0m
+[0;32mI (2385622) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID0
+[0;32mI (2385682) LORA_SEND_PACKET: Sending packet: OFF_ID0[0m
+[0;32mI (2385722) Timer: packet received:[{"ID":0,"relay":0}][0m
+[0;32mI (2386022) MQTT_EXAMPLE: MQTT_EVENT_DATA[0m
+TOPIC=/flespi/qos1
+DATA=OFF_ID1
+
+assert failed: xTaskPriorityDisinherit tasks.c:5107 (pxTCB == pxCurrentTCBs[ xPortGetCoreID() ])
+
+
+Backtrace: 0x4008189e:0x3ffc91b0 0x40089ce9:0x3ffc91d0 0x4009278d:0x3ffc91f0 0x4008cbfa:0x3ffc9310 0x40089d47:0x3ffc9330 0x4008a189:0x3ffc9350 0x400d7846:0x3ffc9390 0x400d7ba3:0x3ffc93e0 0x400d7dfd:0x3ffc9400 0x401699dd:0x3ffc9520 0x40169452:0x3ffc9550 0x400d8112:0x3ffc9590 0x400d8c48:0x3ffc95b0 0x400d8db3:0x3ffc95e0 0x400d92b4:0x3ffc9610 0x4008a7f5:0x3ffc9640
+
+
+
+
+ELF file SHA256: 9953f06b5
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  6 2024 23:59:58[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (35) boot: chip revision: v3.0[0m
+[0;32mI (39) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=265bch (157116) map[0m
+[0;32mI (158) esp_image: segment 1: paddr=000365e4 vaddr=3ffb0000 size=03ce0h ( 15584) load[0m
+[0;32mI (164) esp_image: segment 2: paddr=0003a2cc vaddr=40080000 size=05d4ch ( 23884) load[0m
+[0;32mI (174) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9ccf4h (642292) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000dcd1c vaddr=40085d4c size=1297ch ( 76156) load[0m
+[0;32mI (436) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (436) boot: Disabling RNG early entropy source...[0m
+[0;32mI (448) cpu_start: Multicore app[0m
+[0;32mI (456) cpu_start: Pro cpu start user code[0m
+[0;32mI (456) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (457) cpu_start: Application information:[0m
+[0;32mI (459) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (465) cpu_start: App version:      1[0m
+[0;32mI (470) cpu_start: Compile time:     Jun  6 2024 23:58:26[0m
+[0;32mI (476) cpu_start: ELF file SHA256:  9953f06b5...[0m
+[0;32mI (481) cpu_start: ESP-IDF:          v5.2.2[0m
+[0;32mI (486) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (491) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (496) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (501) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (508) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (514) heap_init: At 3FFB83D0 len 00027C30 (159 KiB): DRAM[0m
+[0;32mI (520) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (526) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (533) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (540) spi_flash: detected chip: generic[0m
+[0;32mI (543) spi_flash: flash io: dio[0m
+[0;33mW (547) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (561) main_task: Started on CPU0[0m
+[0;32mI (571) main_task: Calling app_main()[0m
+[0;32mI (621) wifi station: STARTING WIFI APPLICATION[0m
+I (631) wifi:wifi driver task: 3ffc0888, prio:23, stack:6656, core=0
+I (651) wifi:wifi firmware version: 3e0076f
+I (651) wifi:wifi certification version: v7.0
+I (651) wifi:config NVS flash: enabled
+I (651) wifi:config nano formating: disabled
+I (651) wifi:Init data frame dynamic rx buffer num: 32
+I (661) wifi:Init static rx mgmt buffer num: 5
+I (661) wifi:Init management short buffer num: 32
+I (661) wifi:Init dynamic tx buffer num: 32
+I (671) wifi:Init static rx buffer size: 1600
+I (671) wifi:Init static rx buffer num: 10
+I (681) wifi:Init dynamic rx buffer num: 32
+[0;32mI (681) wifi_init: rx ba win: 6[0m
+[0;32mI (681) wifi_init: tcpip mbox: 32[0m
+[0;32mI (691) wifi_init: udp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp mbox: 6[0m
+[0;32mI (691) wifi_init: tcp tx win: 5760[0m
+[0;32mI (701) wifi_init: tcp rx win: 5760[0m
+[0;32mI (701) wifi_init: tcp mss: 1440[0m
+[0;32mI (711) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (711) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (721) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+I (811) wifi:mode : sta (b8:d6:1a:5b:7c:ac)
+I (811) wifi:enable tsf
+[0;32mI (811) wifi station: wifi_init_sta finished.[0m
+I (871) wifi:new:<3,0>, old:<1,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (871) wifi:state: init -> auth (b0)
+I (1881) wifi:state: auth -> init (200)
+I (1881) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (1881) wifi station: retry to connect to the AP[0m
+[0;32mI (1881) wifi station: connect to the AP fail[0m
+[0;32mI (4301) wifi station: retry to connect to the AP[0m
+[0;32mI (4301) wifi station: connect to the AP fail[0m
+I (4301) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (4301) wifi:state: init -> auth (b0)
+I (5311) wifi:state: auth -> init (200)
+I (5311) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (5311) wifi station: retry to connect to the AP[0m
+[0;32mI (5311) wifi station: connect to the AP fail[0m
+[0;32mI (7731) wifi station: retry to connect to the AP[0m
+[0;32mI (7731) wifi station: connect to the AP fail[0m
+I (7731) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+I (7731) wifi:state: init -> auth (b0)
+I (8741) wifi:state: auth -> init (200)
+I (8741) wifi:new:<3,0>, old:<3,0>, ap:<255,255>, sta:<3,0>, prof:1
+[0;32mI (8741) wifi station: retry to connect to the AP[0m
+[0;32mI (8741) wifi station: connect to the AP fail[0m
+[0;32mI (11151) wifi station: connect to the AP fail[0m
+[0;32mI (11151) wifi station: Failed to connect to SSID:Hai Nam, password:23581104[0m
+[0;32mI (11161) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (11161) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (11171) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (11181) mqtt_client: Error transport connect[0m
+[0;32mI (11181) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (11191) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (11191) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (11201) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (16201) main_task: Returned from app_main()[0m
+[0;32mI (26201) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (26201) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (26201) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (26211) mqtt_client: Error transport connect[0m
+[0;32mI (26211) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (26221) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (26221) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (26231) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m
+[0;32mI (41231) MQTT_EXAMPLE: Other event id:7[0m
+[0;31mE (41231) esp-tls: couldn't get hostname for :mqtt.flespi.io: getaddrinfo() returns 202, addrinfo=0x0[0m
+[0;31mE (41231) transport_base: Failed to open a new connection: 32769[0m
+[0;31mE (41241) mqtt_client: Error transport connect[0m
+[0;32mI (41241) MQTT_EXAMPLE: MQTT_EVENT_ERROR[0m
+[0;31mE (41251) MQTT_EXAMPLE: Last error reported from esp-tls: 0x8001[0m
+[0;32mI (41251) MQTT_EXAMPLE: Last errno string (Success)[0m
+[0;32mI (41261) MQTT_EXAMPLE: MQTT_EVENT_DISCONNECTED[0m

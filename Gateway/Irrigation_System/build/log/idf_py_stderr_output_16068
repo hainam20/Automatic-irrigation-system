@@ -1,0 +1,107 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7720: lora_idle at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:105
+0x400d7a0e: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:348
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7720: lora_idle at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:105
+0x400d7a0e: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:348
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7720: lora_idle at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:105
+0x400d7a0e: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:348
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76e6: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:61
+0x400d7afd: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:419
+0x400d7242: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:85
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7a27: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:354
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7740: lora_receive at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:123
+0x400d723f: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:84
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7a27: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:354
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x4008189e: panic_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/panic.c:466
+0x40089ce9: esp_system_abort at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/port/esp_system_chip.c:93
+0x4009278d: __assert_func at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/assert.c:81
+0x400dd93d: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1023 (discriminator 1)
+0x400d76a6: lora_write_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:40
+0x400d7720: lora_idle at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:105
+0x400d7a0e: lora_send_packet at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:348
+0x400d720a: timer_callback at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:26
+0x400d4da1: timer_process_alarm at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:453
+0x400d4de9: timer_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_timer/src/esp_timer.c:479 (discriminator 1)
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0m

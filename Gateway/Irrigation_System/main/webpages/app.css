@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffeb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    position: relative;
+}
+
+header h1 {
+    flex-grow: 1;
+    text-align: center;
+    text-transform: uppercase;
+    color: #0f6e41;
+}
+
+header img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#numberNode, #WiFiConnect, #MQTTConnect {
+    border: 2px solid #0f6e41; 
+    border-radius: 8px;
+    padding: 16px;
+    margin: 20px;
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+
+#numberNode, #WiFiConnect h2, #MQTTConnect h2 {
+    color: #0f6e41; 
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="button"], input[type="submit"] {
+    display: block;
+    width: calc(100% - 22px);
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #0f6e41;
+    border-radius: 4px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#connect_wifi, #connect_mqtt, #submitNumber {
+    background-color: #0f6e41;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#connect_wifi:hover, #connect_mqtt:hover, #submitNumber:hover {
+    background-color: #45a049;
+}
+
+#disconnect_wifi, #disconnect_mqtt {
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    margin-left: 10px;
+}
+
+#disconnect_wifi:hover, #disconnect_mqtt:hover {
+    background-color: red;
+}
+
+
+#wifi_connect_credentials_errors, #mqtt_connect_credentials_errors {
+    color:#f44336;
+    margin-top: 10px;
+}
+
+#wifi_connect_status, #mqtt_connect_status {
+    color: #45a049; 
+    font-weight: bold;
+    margin-top: 10px;
+}

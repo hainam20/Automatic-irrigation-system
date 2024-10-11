@@ -1,0 +1,111 @@
+[1/15] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\bootloader\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 D:/VScode/LORA/Final_Project/Irrigation_System/build/bootloader/bootloader.bin"
+Bootloader binary size 0x6860 bytes. 0x7a0 bytes (7%) free.
+[2/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/app_nvs.c.obj
+D:/VScode/LORA/Final_Project/Irrigation_System/main/app_nvs.c: In function 'get_quantity_from_nvs':
+D:/VScode/LORA/Final_Project/Irrigation_System/main/app_nvs.c:70:50: warning: passing argument 3 of 'nvs_get_i32' from incompatible pointer type [-Wincompatible-pointer-types]
+   70 |         err = nvs_get_i32(my_handle, "quantity", quantity);
+      |                                                  ^~~~~~~~
+      |                                                  |
+      |                                                  int *
+In file included from C:/esp/esp-idf/v5.2.2/esp-idf/components/nvs_flash/include/nvs_flash.h:13,
+                 from D:/VScode/LORA/Final_Project/Irrigation_System/main/app_nvs.c:6:
+C:/esp/esp-idf/v5.2.2/esp-idf/components/nvs_flash/include/nvs.h:393:71: note: expected 'int32_t *' {aka 'long int *'} but argument is of type 'int *'
+  393 | esp_err_t nvs_get_i32 (nvs_handle_t handle, const char* key, int32_t* out_value);
+      |                                                              ~~~~~~~~~^~~~~~~~~
+[3/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/lora.c.obj
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c: In function 'send_lora_packet':
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:500:24: warning: passing argument 1 of 'lora_send_packet' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  500 |       lora_send_packet(data, len);
+      |                        ^~~~
+D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:376:32: note: expected 'uint8_t *' {aka 'unsigned char *'} but argument is of type 'const uint8_t *' {aka 'const unsigned char *'}
+  376 | void lora_send_packet(uint8_t *buf, int size)
+      |                       ~~~~~~~~~^~~
+[4/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+[5/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/http_server_app.c.obj
+[6/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp_mqtt.c.obj
+[7/13] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi.c.obj
+[8/13] Linking C static library esp-idf\main\libmain.a
+[9/13] Generating ld/sections.ld
+[10/13] Linking CXX executable Irrigation_System.elf
+[11/13] Generating binary image from built executable
+esptool.py v4.7.0
+Creating esp32 image...
+Merged 2 ELF sections
+Successfully created esp32 image.
+Generated D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin
+[12/13] cmd.exe /C "cd /D D:\VScode\LORA\Final_Project\Irrigation_System\build\esp-idf\esptool_py && c:\esp\tools\python_env\idf5.2_py3.11_env\Scripts\python.exe C:/esp/esp-idf/v5.2.2/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app D:/VScode/LORA/Final_Project/Irrigation_System/build/partition_table/partition-table.bin D:/VScode/LORA/Final_Project/Irrigation_System/build/Irrigation_System.bin"
+Irrigation_System.bin binary size 0x10e820 bytes. Smallest app partition is 0x200000 bytes. 0xf17e0 bytes (47%) free.
+[12/13] cmd.exe /C "cd /D C:\esp\esp-idf\v5.2.2\esp-idf\components\esptool_py && C:\esp\tools\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=C:/esp/esp-idf/v5.2.2/esp-idf -D SERIAL_TOOL=c:/esp/tools/python_env/idf5.2_py3.11_env/Scripts/python.exe;;C:/esp/esp-idf/v5.2.2/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D WORKING_DIRECTORY=D:/VScode/LORA/Final_Project/Irrigation_System/builesptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x10000 Irrigation_System.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.7.0
+Serial port COM5
+Connecting....
+Chip is ESP32-D0WD-V3 (revision v3.0)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+WARNING: Detected crystal freq 41.01MHz is quite different to normalized freq 40MHz. Unsupported crystal in use?
+Crystal is 40MHz
+MAC: b8:d6:1a:5b:7c:ac
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00010000 to 0x0011efff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Compressed 26720 bytes to 16349...
+Writing at 0x00001000... (100 %)
+Wrote 26720 bytes (16349 compressed) at 0x00001000 in 0.9 seconds (effective 248.6 kbit/s)...
+Hash of data verified.
+Compressed 1108000 bytes to 646311...
+Writing at 0x00010000... (2 %)
+Writing at 0x0001defe... (5 %)
+Writing at 0x0002bf2d... (7 %)
+Writing at 0x00039672... (10 %)
+Writing at 0x00046a86... (12 %)
+Writing at 0x0004e1e2... (15 %)
+Writing at 0x000532fc... (17 %)
+Writing at 0x0005e456... (20 %)
+Writing at 0x00064960... (22 %)
+Writing at 0x0006a43f... (25 %)
+Writing at 0x0007009b... (27 %)
+Writing at 0x00075ddf... (30 %)
+Writing at 0x0007b833... (32 %)
+Writing at 0x0008168c... (35 %)
+Writing at 0x0008723c... (37 %)
+Writing at 0x0008cee2... (40 %)
+Writing at 0x0009366f... (42 %)
+Writing at 0x0009947d... (45 %)
+Writing at 0x0009f137... (47 %)
+Writing at 0x000a5798... (50 %)
+Writing at 0x000ab29c... (52 %)
+Writing at 0x000b107f... (55 %)
+Writing at 0x000b67f7... (57 %)
+Writing at 0x000bba48... (60 %)
+Writing at 0x000c105a... (62 %)
+Writing at 0x000c62e9... (65 %)
+Writing at 0x000cb9e0... (67 %)
+Writing at 0x000d10bf... (70 %)
+Writing at 0x000d6a5a... (72 %)
+Writing at 0x000dc403... (75 %)
+Writing at 0x000e1ed8... (77 %)
+Writing at 0x000e7cb1... (80 %)
+Writing at 0x000ed4e2... (82 %)
+Writing at 0x000f356b... (85 %)
+Writing at 0x000feb83... (87 %)
+Writing at 0x00104ac9... (90 %)
+Writing at 0x0010a993... (92 %)
+Writing at 0x001104cc... (95 %)
+Writing at 0x00116b28... (97 %)
+Writing at 0x0011be4a... (100 %)
+Wrote 1108000 bytes (646311 compressed) at 0x00010000 in 15.3 seconds (effective 578.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 104...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (104 compressed) at 0x00008000 in 0.1 seconds (effective 336.9 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
+d -P C:/esp/esp-idf/v5.2.2/esp-idf/components/esptool_py/run_serial_tool.cmake"

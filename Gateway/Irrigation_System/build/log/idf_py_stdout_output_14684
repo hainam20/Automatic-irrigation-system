@@ -1,0 +1,425 @@
+ets J�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (355) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (420) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (428) main_task: Started on CPU0[0m
+[0;32mI (438) main_task: Calling app_main()[0m
+[0;32mI (508) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (508) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+
+
+Backtrace: 0x4008183e:0x3ffb8770 0x40086ddd:0x3ffb8790 0x4008e2e9:0x3ffb87b0 0x40087153:0x3ffb88d0 0x400d73a7:0x3ffb8910 0x400d7b6b:0x3ffb8940 0x40087871:0x3ffb8970
+
+
+
+
+ELF file SHA256: 1626963aa
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (507) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (507) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+
+
+Backtrace: 0x4008183e:0x3ffb8770 0x40086ddd:0x3ffb8790 0x4008e2e9:0x3ffb87b0 0x40087153:0x3ffb88d0 0x400d73a7:0x3ffb8910 0x400d7b6b:0x3ffb8940 0x40087871:0x3ffb8970
+
+
+
+
+ELF file SHA256: 1626963aa
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (507) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (507) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+
+
+Backtrace: 0x4008183e:0x3ffb8770 0x40086ddd:0x3ffb8790 0x4008e2e9:0x3ffb87b0 0x40087153:0x3ffb88d0 0x400d73a7:0x3ffb8910 0x400d7b6b:0x3ffb8940 0x40087871:0x3ffb8970
+
+
+
+
+ELF file SHA256: 1626963aa
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (507) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (507) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+
+
+Backtrace: 0x4008183e:0x3ffb8770 0x40086ddd:0x3ffb8790 0x4008e2e9:0x3ffb87b0 0x40087153:0x3ffb88d0 0x400d73a7:0x3ffb8910 0x400d7b6b:0x3ffb8940 0x40087871:0x3ffb8970
+
+
+
+
+ELF file SHA256: 1626963aa
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m
+[0;32mI (507) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (507) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+
+assert failed: xQueueGenericSend queue.c:936 (pxQueue)
+
+
+Backtrace: 0x4008183e:0x3ffb8770 0x40086ddd:0x3ffb8790 0x4008e2e9:0x3ffb87b0 0x40087153:0x3ffb88d0 0x400d73a7:0x3ffb8910 0x400d7b6b:0x3ffb8940 0x40087871:0x3ffb8970
+
+
+
+
+ELF file SHA256: 1626963aa
+
+Rebooting...
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=1f504h (128260) map[0m
+[0;32mI (149) esp_image: segment 1: paddr=0002f52c vaddr=3ffb0000 size=00aech (  2796) load[0m
+[0;32mI (150) esp_image: segment 2: paddr=00030020 vaddr=400d0020 size=56b98h (355224) map[0m
+[0;32mI (276) esp_image: segment 3: paddr=00086bc0 vaddr=3ffb0aec size=019b4h (  6580) load[0m
+[0;32mI (279) esp_image: segment 4: paddr=0008857c vaddr=40080000 size=0f9c0h ( 63936) load[0m
+[0;32mI (315) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (315) boot: Disabling RNG early entropy source...[0m
+[0;32mI (326) cpu_start: Multicore app[0m
+[0;32mI (335) cpu_start: Pro cpu start user code[0m
+[0;32mI (335) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (335) cpu_start: Application information:[0m
+[0;32mI (338) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (344) cpu_start: App version:      1[0m
+[0;32mI (348) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (354) cpu_start: ELF file SHA256:  1626963aa...[0m
+[0;32mI (360) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (365) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (370) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (375) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (380) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (387) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (393) heap_init: At 3FFB3BA0 len 0002C460 (177 KiB): DRAM[0m
+[0;32mI (399) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (405) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (412) heap_init: At 4008F9C0 len 00010640 (65 KiB): IRAM[0m
+[0;32mI (419) spi_flash: detected chip: generic[0m
+[0;32mI (423) spi_flash: flash io: dio[0m
+[0;32mI (427) main_task: Started on CPU0[0m
+[0;32mI (437) main_task: Calling app_main()[0m

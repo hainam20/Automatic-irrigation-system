@@ -1,0 +1,620 @@
+ets Jul 29 �ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4ad54h (306516) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005ad7c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005ea84 vaddr=40080000 size=01594h (  5524) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a748ch (685196) map[0m
+[0;32mI (459) esp_image: segment 4: paddr=001074b4 vaddr=40081594 size=17134h ( 94516) load[0m
+[0;32mI (508) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (520) cpu_start: Multicore app[0m
+[0;32mI (529) cpu_start: Pro cpu start user code[0m
+[0;32mI (529) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (529) cpu_start: Application information:[0m
+[0;32mI (532) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (537) cpu_start: App version:      1[0m
+[0;32mI (542) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (548) cpu_start: ELF file SHA256:  7bfed3215...[0m
+[0;32mI (553) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (559) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (563) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (568) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (599) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (613) spi_flash: detected chip: generic[0m
+[0;32mI (616) spi_flash: flash io: dio[0m
+[0;32mI (621) main_task: Started on CPU0[0m
+[0;32mI (631) main_task: Calling app_main()[0m
+[0;32mI (701) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (701) nvs: Quantity = 3[0m
+Quantity: 3
+[0;32mI (701) main_task: Returned from app_main()[0m
+[0;32mI (751) wifi_init: rx ba win: 6[0m
+[0;32mI (751) wifi_init: tcpip mbox: 32[0m
+[0;32mI (751) wifi_init: udp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp mbox: 6[0m
+[0;32mI (751) wifi_init: tcp tx win: 5760[0m
+[0;32mI (761) wifi_init: tcp rx win: 5760[0m
+[0;32mI (761) wifi_init: tcp mss: 1440[0m
+[0;32mI (761) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (771) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1301) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1451) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1461) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1461) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1461) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1471) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: VNPT-HAINAM Password: 01686237737
+[0;32mI (1481) wifi_app: Loaded station configuration[0m
+[0;32mI (1491) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1491) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1501) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (3121) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (4121) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (4121) esp_netif_handlers: sta ip: 192.168.1.15, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6511) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (6511) MQTT: MQTT_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (6511) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+[0;32mI (6531) MQTT: Loaded MQTT configuration[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+[0;32mI (6541) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (6541) MQTT: Other event id:7[0m
+[0;32mI (6541) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (8381) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8381) MQTT: sent subscribe successful, msg_id=51358[0m
+[0;32mI (8391) MQTT: sent subscribe successful, msg_id=64765[0m
+[0;32mI (8671) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=51358[0m
+[0;32mI (8671) MQTT: sent publish successful[0m
+[0;32mI (8961) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=64765[0m
+[0;32mI (8961) MQTT: sent publish successful[0m
+[0;32mI (11511) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (11511) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (30761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (31801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (34841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (37881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (40921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (43961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (52001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (53041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (56081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (59121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (62161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (65201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (73241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (74281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (77321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (80361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (83401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (86441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (94441) Timer: 1 hour has passed![0m
+[0;32mI (94481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (95521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (98561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (101601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (104641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (107681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (115721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (116761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (119801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (122841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (125881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (128921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (136961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (138001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (141041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (144081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (147121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (150161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (158161) Timer: 1 hour has passed![0m
+[0;32mI (158201) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (159241) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (162281) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (165321) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (168361) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (171401) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (179441) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (180481) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (183521) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (186561) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (189601) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (192641) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (200681) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (201721) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (204761) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (207801) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (210841) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (213881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (221881) Timer: 1 hour has passed![0m
+[0;32mI (221921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (222961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (226001) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (229041) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (232081) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (235121) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (235381) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (235661) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (236371) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (236871) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (237861) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (238131) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (238861) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (238961) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (238981) HTTP_SERVER: index.html requested[0m
+[0;32mI (239091) HTTP_SERVER: Jquery requested[0m
+[0;32mI (239131) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (239401) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (239421) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (240391) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (240671) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (240681) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (241211) HTTP_SERVER: app.css requested[0m
+[0;32mI (241261) HTTP_SERVER: app.js requested[0m
+[0;32mI (241291) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (241651) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (243161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (243851) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (243891) HTTP_SERVER: favicon.ico requested[0m
+[0;32mI (244201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (244841) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (245361) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (245351) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (245371) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (246331) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (246601) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (246611) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (247241) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (247581) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (247851) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (247861) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (248311) HTTP_SERVER: quantity.json requested[0m
+[0;32mI (248841) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (249131) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (249151) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (250131) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (250281) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (252321) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (252331) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (253311) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (253321) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (253791) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (253811) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (254781) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (255061) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (255081) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (256051) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (256331) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (256341) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (256371) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (257311) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (257591) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (257601) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (258581) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (260791) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (260801) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (261771) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (262281) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (262301) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (263261) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (263601) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (263711) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (264411) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (264561) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (264861) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (264881) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (265451) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (265841) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (266121) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (266141) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (267111) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (268491) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (269331) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (269341) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (270331) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (270841) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (270851) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (271531) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (271821) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (272131) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (272181) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (273101) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (273381) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (273391) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (274381) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (274571) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (274641) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (274651) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (275631) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (277611) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (277841) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (277881) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (278831) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (279311) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (279331) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (280311) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (280591) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (280611) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (281571) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (281861) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (281881) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (282841) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (283121) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (283151) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (284101) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (285651) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (286301) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (286331) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (286691) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (287291) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (287791) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (287811) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (288781) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (289061) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (289071) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (289731) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (290051) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (290311) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (290331) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (291301) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (291561) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (291571) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (292551) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (292771) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (294771) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (294781) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (295761) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (295811) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (296271) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (296291) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (297271) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (297551) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (298531) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (298811) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (298841) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (298851) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (299811) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (300091) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (300121) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (301081) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (303271) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (303291) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (304261) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (304761) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (304771) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (305751) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (306021) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (306051) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (306891) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (307021) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (307291) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (307311) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (307931) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (308281) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (308571) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (308611) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (309561) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (310971) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (311771) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (311851) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (312751) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (313241) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (313261) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (314011) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (314231) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (314501) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (314521) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (315501) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (315771) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (315791) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (316761) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (317021) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (317041) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (317061) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (318011) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (320101) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (320221) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (320231) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (321201) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (321691) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (321711) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (322681) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (322951) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (322961) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (323941) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (324221) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (324231) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (325201) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (325481) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (325491) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (326471) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (328101) Timer: 1 hour has passed![0m
+[0;32mI (328141) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (328671) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (328691) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (329181) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (329661) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (330161) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (330171) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (331151) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (331421) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (331441) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (332221) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (332411) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (332701) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (332711) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (333681) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (333961) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (333981) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (334951) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (335261) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (337161) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (337181) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (338161) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (338301) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (341341) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (346761) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (346771) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (347741) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (348021) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (348151) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (349011) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (349301) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (349311) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (349401) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (350291) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (350441) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (350571) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (350591) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (351571) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (353481) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (353781) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (353791) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (354771) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (355271) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (355291) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (356271) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (356521) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (356561) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (356571) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (357531) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (357811) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (357821) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (358791) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (359061) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (359071) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (359561) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (360051) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (362281) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (362301) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (362601) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (363261) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (363791) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (363811) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (364791) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (365061) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (365081) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (366051) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (366331) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (366341) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (367321) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (367581) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (367591) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (368581) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (370641) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (370801) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (370831) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (371681) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (371791) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (372281) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (372301) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (373271) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (373551) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (373561) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (374541) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (374721) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (374841) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (374891) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (375821) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (376081) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (376101) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (377081) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (377761) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (379281) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (379291) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (380271) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (380771) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (380811) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (380821) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (381761) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (382031) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (382051) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (383011) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (383271) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (383281) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (383861) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (384261) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (384531) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (384541) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (385521) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (387711) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (387731) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (388701) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (389191) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (389201) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (390181) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (390461) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (390471) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (391441) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (391711) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (391731) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (391901) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (392711) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (392941) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (392981) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (393001) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (393971) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (395981) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (396161) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (396171) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (397151) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (397641) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (397661) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (398631) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (398891) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (398911) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (399021) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (399891) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (400181) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (400191) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (401161) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (401431) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (401451) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (402061) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (402421) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (404631) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (404631) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (405101) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (405621) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (406121) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (406131) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (407101) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (407371) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (407381) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (408371) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (408641) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (408661) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (409641) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (409901) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (409911) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (410901) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (413101) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (413111) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (413161) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (414101) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (414201) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (414601) wifi_app: WIFI_EVENT_AP_STACONNECTED[0m
+[0;32mI (414601) esp_netif_lwip: DHCP server assigned IP to a client, IP is: 192.168.0.2[0m
+[0;32mI (415591) wifi_app: WIFI_EVENT_AP_STADISCONNECTED[0m
+[0;32mI (417241) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (420281) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (423321) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (426361) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (434361) Timer: 1 hour has passed![0m
+[0;32mI (434401) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (435441) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (438481) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (441521) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (444561) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (447601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (455641) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (456681) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (459721) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (462761) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (465801) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (468841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (476881) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (477921) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (480961) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (484001) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (487041) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (490081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (498121) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (499161) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (502201) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (505241) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (508281) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (511321) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (519361) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (520401) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (523441) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (526481) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (529521) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (532561) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (540561) Timer: 1 hour has passed![0m
+[0;32mI (540601) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (541641) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (544681) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (547721) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (550761) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (553801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (561841) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (562881) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (565921) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (568961) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (572001) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (575041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (583081) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (584121) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (587161) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (590201) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (593241) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (596281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (604321) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (605361) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (608401) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (611441) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (614481) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (617521) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (625561) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (626601) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (629641) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (632681) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (635721) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (638761) LORA_SEND_PACKET: Sending packet: GET_ID4[0m
+[0;32mI (646761) Timer: 1 hour has passed![0m
+[0;32mI (646801) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (647841) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (650881) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (653921) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (656961) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (660001) LORA_SEND_PACKET: Sending packet: GET_ID0[0m
+[0;32mI (668041) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (669081) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (672121) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (675161) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (678201) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (681241) LORA_SEND_PACKET: Sending packet: GET_ID1[0m
+[0;32mI (689281) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (690321) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (693361) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (696401) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (699441) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (702481) LORA_SEND_PACKET: Sending packet: GET_ID2[0m
+[0;32mI (710521) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (711561) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (714601) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (717641) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (720681) LORA_SEND_PACKET: Sending packet: GET_ID3[0m
+[0;32mI (723721) LORA_SEND_PACKET: Sending packet: GET_ID3[0m

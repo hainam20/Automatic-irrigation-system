@@ -1,0 +1,81 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM5 instead...[0m
+[0;33m--- esp-idf-monitor 1.4.0 on \\.\COM5 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40080400: _init at ??:?
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4008c764: xTaskGetSchedulerState at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4951
+0x4008a135: xQueueGenericSend at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:941
+0x400d7852: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:83
+0x400d7c49: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:437
+0x400d7320: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:104
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4008595d: esp_crosscore_int_send_yield at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/crosscore_int.c:172
+0x4008c8c6: vTaskDelay at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:1588 (discriminator 1)
+0x400d737c: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:113
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ab97: vPortClearInterruptMaskFromISR at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a65c: xQueueSemaphoreTake at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1777
+0x40082aa8: lock_acquire_generic at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:146
+0x40082b91: _lock_acquire at C:/esp/esp-idf/v5.2.2/esp-idf/components/newlib/locks.c:154
+0x400d5b9f: esp_vfs_select at C:/esp/esp-idf/v5.2.2/esp-idf/components/vfs/vfs.c:986
+0x400e7d72: base_poll_read at C:/esp/esp-idf/v5.2.2/esp-idf/components/tcp_transport/transport_ssl.c:168 (discriminator 1)
+0x401639a5: esp_transport_poll_read at C:/esp/esp-idf/v5.2.2/esp-idf/components/tcp_transport/transport.c:156
+0x400e81a7: tcp_read at C:/esp/esp-idf/v5.2.2/esp-idf/components/tcp_transport/transport_ssl.c:285
+0x40163961: esp_transport_read at C:/esp/esp-idf/v5.2.2/esp-idf/components/tcp_transport/transport.c:140
+0x400d8734: mqtt_message_receive at C:/esp/esp-idf/v5.2.2/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1216
+0x400d8cc5: mqtt_process_receive at C:/esp/esp-idf/v5.2.2/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1320
+0x400d92c0: esp_mqtt_task at C:/esp/esp-idf/v5.2.2/esp-idf/components/mqtt/esp-mqtt/mqtt_client.c:1657
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008c796: vPortClearInterruptMaskFromISR at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) xTaskGetSchedulerState at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/tasks.c:4982
+0x4008a4f8: xQueueReceive at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1540
+0x400dda3c: spi_device_get_trans_result at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:995
+0x400dda71: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1020
+0x400d781d: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:76
+0x400d7c49: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:437
+0x400d7320: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:104
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4008a5e2: xQueueSemaphoreTake at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1713 (discriminator 1)
+0x400d7810: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:74
+0x400d7c49: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:437
+0x400d7320: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:104
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0;33m0x400debb7: task_wdt_timeout_handling at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:441
+0x400def7c: task_wdt_isr at C:/esp/esp-idf/v5.2.2/esp-idf/components/esp_system/task_wdt/task_wdt.c:515
+0x40083525: _xt_lowint1 at C:/esp/esp-idf/v5.2.2/esp-idf/components/xtensa/xtensa_vectors.S:1240
+0x4000bfed: _xtos_set_intlevel in ROM
+0x4008ab97: vPortClearInterruptMaskFromISR at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:564
+ (inlined by) vPortExitCritical at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:504
+0x4008a562: xQueueReceive at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/queue.c:1581
+0x400dda3c: spi_device_get_trans_result at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:995
+0x400dda71: spi_device_transmit at C:/esp/esp-idf/v5.2.2/esp-idf/components/driver/spi/gpspi/spi_master.c:1020
+0x400d781d: lora_read_reg at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:76
+0x400d7c49: lora_received at D:/VScode/LORA/Final_Project/Irrigation_System/main/lora.c:437
+0x400d7320: task_rx at D:/VScode/LORA/Final_Project/Irrigation_System/main/main.c:104
+0x4008a7f5: vPortTaskWrapper at C:/esp/esp-idf/v5.2.2/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:134
+[0m
+[0m

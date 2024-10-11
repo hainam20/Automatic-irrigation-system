@@ -1,0 +1,10 @@
+.ant-switch {
+    background: rgb(140,140,140) !important;
+    &.ant-switch-checked {
+        background: rgb(23,119,225) !important;
+    }
+}
+
+.ant-btn {
+    background: rgb(23,119,225) !important;
+}

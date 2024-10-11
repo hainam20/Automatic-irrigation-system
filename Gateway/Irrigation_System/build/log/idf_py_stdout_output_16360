@@ -1,0 +1,124 @@
+ets Jul�ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7172
+load:0x40078000,len:15540
+load:0x40080400,len:4
+ho 8 tail 4 room 4
+load:0x40080404,len:3904
+entry 0x40080640
+[0;32mI (31) boot: ESP-IDF v5.2.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jul 15 2024 11:05:42[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.0[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00010000 00200000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=4aa64h (305764) map[0m
+[0;32mI (210) esp_image: segment 1: paddr=0005aa8c vaddr=3ffb0000 size=03d00h ( 15616) load[0m
+[0;32mI (216) esp_image: segment 2: paddr=0005e794 vaddr=40080000 size=01884h (  6276) load[0m
+[0;32mI (218) esp_image: segment 3: paddr=00060020 vaddr=400d0020 size=a7288h (684680) map[0m
+[0;32mI (458) esp_image: segment 4: paddr=001072b0 vaddr=40081884 size=16e44h ( 93764) load[0m
+[0;32mI (507) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (508) boot: Disabling RNG early entropy source...[0m
+[0;32mI (519) cpu_start: Multicore app[0m
+[0;32mI (528) cpu_start: Pro cpu start user code[0m
+[0;32mI (528) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (528) cpu_start: Application information:[0m
+[0;32mI (531) cpu_start: Project name:     Irrigation_System[0m
+[0;32mI (537) cpu_start: App version:      1[0m
+[0;32mI (541) cpu_start: Compile time:     Jul 15 2024 11:03:58[0m
+[0;32mI (547) cpu_start: ELF file SHA256:  6043616ed...[0m
+[0;32mI (553) cpu_start: ESP-IDF:          v5.2.2-dirty[0m
+[0;32mI (558) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (563) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (568) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (573) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (580) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (586) heap_init: At 3FFB8440 len 00027BC0 (158 KiB): DRAM[0m
+[0;32mI (592) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (598) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (605) heap_init: At 400986C8 len 00007938 (30 KiB): IRAM[0m
+[0;32mI (612) spi_flash: detected chip: generic[0m
+[0;32mI (615) spi_flash: flash io: dio[0m
+[0;32mI (620) main_task: Started on CPU0[0m
+[0;32mI (630) main_task: Calling app_main()[0m
+[0;32mI (700) wifi_app: STARTING WIFI APPLICATION[0m
+[0;32mI (700) main_task: Returned from app_main()[0m
+[0;32mI (750) wifi_init: rx ba win: 6[0m
+[0;32mI (750) wifi_init: tcpip mbox: 32[0m
+[0;32mI (750) wifi_init: udp mbox: 6[0m
+[0;32mI (750) wifi_init: tcp mbox: 6[0m
+[0;32mI (750) wifi_init: tcp tx win: 5760[0m
+[0;32mI (760) wifi_init: tcp rx win: 5760[0m
+[0;32mI (760) wifi_init: tcp mss: 1440[0m
+[0;32mI (770) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (770) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (1300) phy_init: phy_version 4791,2c4672b,Dec 20 2023,16:06:06[0m
+[0;32mI (1450) wifi_app: WIFI_EVENT_STA_START[0m
+[0;32mI (1460) wifi_app: WIFI_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (1460) nvs: app_nvs_load_sta_creds: Loading Wifi credentials from flash[0m
+[0;32mI (1460) wifi_app: WIFI_EVENT_AP_START[0m
+[0;32mI (1470) esp_netif_lwip: DHCP server started on interface WIFI_AP_DEF with IP: 192.168.0.1[0m
+app_nvs_load_sta_creds: SSID: Hai Nam Password: 23581104
+[0;32mI (1480) wifi_app: Loaded station configuration[0m
+[0;32mI (1490) wifi_app: WIFI_APP_MSG_START_HTTP_SERVER[0m
+[0;32mI (1490) HTTP_SERVER: http_server_configure: Starting server on port: '80' with task priority: '4'[0m
+[0;32mI (1510) HTTP_SERVER: Registering URI handlers[0m
+[0;32mI (2100) wifi_app: WIFI_EVENT_STA_CONNECTED[0m
+[0;32mI (5110) wifi_app: IP_EVENT_STA_GOT_IP[0m
+[0;32mI (5110) esp_netif_handlers: sta ip: 192.168.1.12, mask: 255.255.255.0, gw: 192.168.1.1[0m
+[0;32mI (6510) MQTT: STARTING MQTT APPLICATION[0m
+[0;32mI (6510) MQTT: MQTT_APP_MSG_LOAD_SAVED_CREDENTIALS[0m
+[0;32mI (6510) MQTT_APP: app_nvs_load_mqtt_creds: Loading MQTT credentials from flash[0m
+app_nvs_load_mqtt_creds: URI: mqtt://mqtt.flespi.io Client ID: esp32 Username: ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL Password: 
+[0;32mI (6530) MQTT: Loaded MQTT configuration[0m
+mqtt://mqtt.flespi.io
+ah2cbuQ57EsGfyGVtW7939tlbBprFq17Gwdbie3jcRiG57SHrZduYBRGhotdrrcL
+esp32
+
+[0;32mI (6540) MQTT: MQTT_APP_MSG_MQTT_CONNECTED[0m
+[0;32mI (6540) MQTT: Other event id:7[0m
+HAJKHDJKHSA
+[0;32mI (6540) HTTP_SERVER: HTTP_MSG_MQTT_CONNECT_SUCCESS[0m
+[0;32mI (8420) MQTT: MQTT_EVENT_CONNECTED[0m
+[0;32mI (8430) MQTT: sent subscribe successful, msg_id=65401[0m
+[0;32mI (8430) MQTT: sent subscribe successful, msg_id=47263[0m
+[0;32mI (8660) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=65401[0m
+[0;32mI (8660) MQTT: sent publish successful[0m
+[0;32mI (8890) MQTT: MQTT_EVENT_SUBSCRIBED, msg_id=47263[0m
+[0;32mI (8890) MQTT: sent publish successful[0m
+[0;32mI (11510) wifi_app: WIFI_APP_MSG_STA_CONNECTED_GOT_IP[0m
+[0;32mI (11510) HTTP_SERVER: HTTP_MSG_WIFI_CONNECT_SUCCESS[0m
+[0;32mI (30700) Timer: 1 hour has passed![0m
+[0;32mI (60700) Timer: 1 hour has passed![0m
+[0;32mI (90700) Timer: 1 hour has passed![0m
+[0;32mI (120700) Timer: 1 hour has passed![0m
+[0;32mI (150700) Timer: 1 hour has passed![0m
+[0;32mI (180700) Timer: 1 hour has passed![0m
+[0;32mI (210700) Timer: 1 hour has passed![0m
+[0;32mI (240700) Timer: 1 hour has passed![0m
+[0;32mI (270700) Timer: 1 hour has passed![0m
+[0;32mI (300700) Timer: 1 hour has passed![0m
+[0;32mI (330700) Timer: 1 hour has passed![0m
+[0;32mI (360700) Timer: 1 hour has passed![0m
+[0;32mI (390700) Timer: 1 hour has passed![0m
+[0;32mI (420700) Timer: 1 hour has passed![0m
+[0;32mI (450700) Timer: 1 hour has passed![0m
+[0;32mI (480700) Timer: 1 hour has passed![0m
+[0;32mI (510700) Timer: 1 hour has passed![0m
+[0;32mI (540700) Timer: 1 hour has passed![0m
+[0;32mI (570700) Timer: 1 hour has passed![0m
+[0;32mI (600700) Timer: 1 hour has passed![0m
+[0;32mI (630700) Timer: 1 hour has passed![0m
+[0;32mI (660700) Timer: 1 hour has passed![0m

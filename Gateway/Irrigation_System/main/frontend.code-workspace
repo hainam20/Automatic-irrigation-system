@@ -1,0 +1,50 @@
+{
+	"folders": [
+		{
+			"path": "../../../../DoAn/frontend"
+		},
+		{
+			"path": "../../../../DoAn/backend"
+		},
+		{
+			"path": "../../../../Learn/DSA"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"array": "c",
+			"string": "c",
+			"string_view": "c",
+			"cstring": "cpp",
+			"*.tcc": "c",
+			"regex": "c",
+			"functional": "c",
+			"ratio": "c",
+			"system_error": "c",
+			"tuple": "c",
+			"type_traits": "c",
+			"utility": "c",
+			"ranges": "c",
+			"span": "c",
+			"sstream": "cpp",
+			"mqtt_client.h": "c",
+			"spi_master.h": "c",
+			"iosfwd": "c",
+			"xlocbuf": "c",
+			"algorithm": "c",
+			"chrono": "c",
+			"complex": "c",
+			"optional": "c",
+			"xtr1common": "c",
+			"xutility": "c",
+			"vector": "c",
+			"xstring": "c",
+			"future": "c",
+			"lora.h": "c",
+			"esp_timer.h": "c"
+		}
+	}
+}
