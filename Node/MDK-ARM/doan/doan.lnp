@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"doan\startup_stm32f103xb.o"
+"doan\dht11.o"
+"doan\lora.o"
+"doan\soil_moisture.o"
+"doan\main.o"
+"doan\stm32f1xx_it.o"
+"doan\stm32f1xx_hal_msp.o"
+"doan\stm32f1xx_hal_adc.o"
+"doan\stm32f1xx_hal_adc_ex.o"
+"doan\stm32f1xx_hal.o"
+"doan\stm32f1xx_hal_rcc.o"
+"doan\stm32f1xx_hal_rcc_ex.o"
+"doan\stm32f1xx_hal_gpio.o"
+"doan\stm32f1xx_hal_dma.o"
+"doan\stm32f1xx_hal_cortex.o"
+"doan\stm32f1xx_hal_pwr.o"
+"doan\stm32f1xx_hal_flash.o"
+"doan\stm32f1xx_hal_flash_ex.o"
+"doan\stm32f1xx_hal_spi.o"
+"doan\stm32f1xx_hal_spi_ex.o"
+"doan\stm32f1xx_hal_tim.o"
+"doan\stm32f1xx_hal_tim_ex.o"
+"doan\system_stm32f1xx.o"
+--strict --scatter "doan\doan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "doan.map" -o doan\doan.axf
